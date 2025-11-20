@@ -1,0 +1,102 @@
+{
+  "id": "MECH-HOLO-PRESS",
+  "domain": "MECHANICAL",
+  "project_name": "Holographic_Printing_Press_V5",
+  "description": "A photon-matter condenser. It prints 3D objects by slowing light to a solid state.",
+  "geometry_tree": {
+    "op": "difference",
+    "children": [
+      {
+        "comment": "MAIN FRAME",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              200,
+              200,
+              20
+            ],
+            "color": "Black"
+          },
+          {
+            "op": "cylinder",
+            "r": 10,
+            "h": 200,
+            "pos": [
+              90,
+              90,
+              100
+            ],
+            "color": "Silver"
+          },
+          {
+            "op": "cylinder",
+            "r": 10,
+            "h": 200,
+            "pos": [
+              -90,
+              90,
+              100
+            ],
+            "color": "Silver"
+          },
+          {
+            "op": "cylinder",
+            "r": 10,
+            "h": 200,
+            "pos": [
+              90,
+              -90,
+              100
+            ],
+            "color": "Silver"
+          },
+          {
+            "op": "cylinder",
+            "r": 10,
+            "h": 200,
+            "pos": [
+              -90,
+              -90,
+              100
+            ],
+            "color": "Silver"
+          }
+        ]
+      },
+      {
+        "comment": "EMITTER ARRAY (Top)",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              180,
+              180,
+              20
+            ],
+            "pos": [
+              0,
+              0,
+              200
+            ],
+            "color": "Glass"
+          },
+          {
+            "op": "sphere",
+            "r": 50,
+            "pos": [
+              0,
+              0,
+              180
+            ],
+            "color": "Cyan"
+          }
+        ]
+      }
+    ]
+  },
+  "archive_id": "TERMINUS-OMEGA-23",
+  "origin": ""
+}

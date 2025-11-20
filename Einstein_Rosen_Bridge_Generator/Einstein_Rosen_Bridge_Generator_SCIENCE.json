@@ -1,0 +1,55 @@
+{
+  "science": {
+    "explanation": "Preliminary rationale for Einstein_Rosen_Bridge_Generator in ELECTRONICS domain. Detailed generation failed.",
+    "assumptions": [
+      "Device components operate within nominal ranges"
+    ],
+    "equations": [],
+    "diagrams": [],
+    "citations": [],
+    "image_prompt": "Explanatory schematic for Einstein_Rosen_Bridge_Generator (ELECTRONICS)"
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "WARN",
+        "detail": "Fewer than 2 assumptions"
+      },
+      {
+        "name": "Equations included",
+        "status": "WARN",
+        "detail": "No equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "WARN",
+        "detail": "No diagrams provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "WARN",
+        "detail": "Fewer than 2 citations"
+      },
+      {
+        "name": "Active components present",
+        "status": "PASS",
+        "detail": "Contains IC/active elements"
+      },
+      {
+        "name": "Signal conditioning",
+        "status": "WARN",
+        "detail": "No filter/amp elements detected"
+      }
+    ],
+    "summary": {
+      "confidence": 0.714,
+      "total_checks": 7
+    }
+  }
+}

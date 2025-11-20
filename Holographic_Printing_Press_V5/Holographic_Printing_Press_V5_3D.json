@@ -1,0 +1,160 @@
+{
+  "project_name": "Holographic_Printing_Press_V5",
+  "domain": "MECHANICAL",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "operation": "difference",
+    "children": [
+      {
+        "type": "group",
+        "operation": "union",
+        "children": [
+          {
+            "type": "box",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "dimensions": [
+              200,
+              200,
+              20
+            ],
+            "color": 0,
+            "material": "standard"
+          },
+          {
+            "type": "cylinder",
+            "position": [
+              90,
+              90,
+              100
+            ],
+            "radius": 10,
+            "height": 200,
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "cylinder",
+            "position": [
+              -90,
+              90,
+              100
+            ],
+            "radius": 10,
+            "height": 200,
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "cylinder",
+            "position": [
+              90,
+              -90,
+              100
+            ],
+            "radius": 10,
+            "height": 200,
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "cylinder",
+            "position": [
+              -90,
+              -90,
+              100
+            ],
+            "radius": 10,
+            "height": 200,
+            "color": 8947848,
+            "material": "standard"
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "operation": "union",
+        "children": [
+          {
+            "type": "box",
+            "position": [
+              0,
+              0,
+              200
+            ],
+            "dimensions": [
+              180,
+              180,
+              20
+            ],
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "sphere",
+            "position": [
+              0,
+              0,
+              180
+            ],
+            "radius": 50,
+            "color": 65535,
+            "material": "standard"
+          }
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "A photon-matter condenser. It prints 3D objects by slowing light to a solid state.",
+    "components": []
+  }
+}

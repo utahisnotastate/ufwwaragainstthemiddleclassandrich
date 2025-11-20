@@ -1,0 +1,50 @@
+{
+  "science": {
+    "explanation": "Preliminary rationale for Holographic_Printing_Press_V5 in MECHANICAL domain. Detailed generation failed.",
+    "assumptions": [
+      "Device components operate within nominal ranges"
+    ],
+    "equations": [],
+    "diagrams": [],
+    "citations": [],
+    "image_prompt": "Explanatory schematic for Holographic_Printing_Press_V5 (MECHANICAL)"
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "WARN",
+        "detail": "Fewer than 2 assumptions"
+      },
+      {
+        "name": "Equations included",
+        "status": "WARN",
+        "detail": "No equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "WARN",
+        "detail": "No diagrams provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "WARN",
+        "detail": "Fewer than 2 citations"
+      },
+      {
+        "name": "Structural elements",
+        "status": "WARN",
+        "detail": "No obvious structural elements"
+      }
+    ],
+    "summary": {
+      "confidence": 0.667,
+      "total_checks": 6
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "project_name": "Einstein_Rosen_Bridge_Generator",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "SINGULARITY_CORE",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "EMIT_NORTH",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "EMIT_SOUTH",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          8,
+          8,
+          4
+        ],
+        "color": 6710886,
+        "material": "standard",
+        "label": "EMIT_EAST",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          8,
+          8,
+          4
+        ],
+        "color": 6710886,
+        "material": "standard",
+        "label": "EMIT_WEST",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "MIRROR_A",
+        "position": [
+          -80,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "MIRROR_B",
+        "position": [
+          -40,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "OSC_MAIN",
+        "position": [
+          0,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "STABILIZER",
+        "position": [
+          40,
+          -10,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "Scalar field topology for opening a stable spatial wormhole.",
+    "components": [
+      {
+        "id": "SINGULARITY_CORE",
+        "type": "IC",
+        "spec": "Zero_Point_Source",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "The Ring Emitters (Scalar Interferometry)",
+        "id": "EMIT_NORTH",
+        "type": "L",
+        "value": "Tesla_Coil_N",
+        "net_hint": "VCC"
+      },
+      {
+        "id": "EMIT_SOUTH",
+        "type": "L",
+        "value": "Tesla_Coil_S",
+        "net_hint": "GND"
+      },
+      {
+        "id": "EMIT_EAST",
+        "type": "L",
+        "value": "Tesla_Coil_E",
+        "net_hint": "OUT"
+      },
+      {
+        "id": "EMIT_WEST",
+        "type": "L",
+        "value": "Tesla_Coil_W",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "Phase Conjugate Mirrors",
+        "id": "MIRROR_A",
+        "type": "D",
+        "value": "Barium_Titanate",
+        "net_hint": "IN"
+      },
+      {
+        "id": "MIRROR_B",
+        "type": "D",
+        "value": "Barium_Titanate",
+        "net_hint": "OUT"
+      },
+      {
+        "comment": "Frequency Control",
+        "id": "OSC_MAIN",
+        "type": "IC",
+        "spec": "Schumann_Resonator",
+        "net_hint": "GND"
+      },
+      {
+        "id": "STABILIZER",
+        "type": "C",
+        "value": "Flux_Capacitor_Ref",
+        "net_hint": "CENTER"
+      }
+    ]
+  }
+}

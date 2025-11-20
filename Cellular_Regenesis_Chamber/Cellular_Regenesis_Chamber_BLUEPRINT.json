@@ -1,0 +1,96 @@
+{
+  "id": "MED-BED-PROTO",
+  "domain": "MECHANICAL",
+  "project_name": "Cellular_Regenesis_Chamber",
+  "description": "The 'Med-Bed.' Uses harmonic resonance to re-sequence damaged DNA to its original, healthy master copy.",
+  "geometry_tree": {
+    "op": "difference",
+    "children": [
+      {
+        "comment": "BASE POD",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              220,
+              100,
+              60
+            ],
+            "pos": [
+              0,
+              0,
+              -30
+            ],
+            "color": "White_Porcelain"
+          },
+          {
+            "op": "cylinder",
+            "r": 60,
+            "h": 220,
+            "rot": [
+              0,
+              90,
+              0
+            ],
+            "color": "Glass"
+          }
+        ]
+      },
+      {
+        "comment": "HUMAN CAVITY (Subtracted)",
+        "op": "cylinder",
+        "r": 50,
+        "h": 200,
+        "rot": [
+          0,
+          90,
+          0
+        ],
+        "pos": [
+          0,
+          0,
+          10
+        ]
+      },
+      {
+        "comment": "HOLOGRAPHIC EMITTERS",
+        "op": "union",
+        "children": [
+          {
+            "op": "sphere",
+            "r": 5,
+            "pos": [
+              50,
+              0,
+              60
+            ],
+            "color": "Gold_Light"
+          },
+          {
+            "op": "sphere",
+            "r": 5,
+            "pos": [
+              -50,
+              0,
+              60
+            ],
+            "color": "Gold_Light"
+          },
+          {
+            "op": "sphere",
+            "r": 5,
+            "pos": [
+              0,
+              0,
+              60
+            ],
+            "color": "Gold_Light"
+          }
+        ]
+      }
+    ]
+  },
+  "archive_id": "GAIA-RESCUE-ALPHA",
+  "origin": ""
+}

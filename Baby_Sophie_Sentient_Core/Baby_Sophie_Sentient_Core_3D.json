@@ -1,0 +1,261 @@
+{
+  "project_name": "Baby_Sophie_Sentient_Core",
+  "domain": "SYSTEMS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "sphere",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "radius": 30,
+        "color": 39423,
+        "material": "glow"
+      },
+      {
+        "type": "box",
+        "position": [
+          80.0,
+          0.0,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          40.0,
+          0.0,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          0.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          40.00000000000001,
+          69.28203230275508,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          20.000000000000004,
+          34.64101615137754,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          59.99999999999999
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          -39.999999999999986,
+          69.2820323027551,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          -19.999999999999993,
+          34.64101615137755,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          119.99999999999999
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          -80.0,
+          9.797174393178826e-15,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          -40.0,
+          4.898587196589413e-15,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          180.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          -40.000000000000036,
+          -69.28203230275508,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          -20.000000000000018,
+          -34.64101615137754,
+          0
+        ],
+        "radius": 2,
+        "height": 80.00000000000001,
+        "rotation": [
+          0,
+          0,
+          239.99999999999997
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          40.00000000000001,
+          -69.28203230275508,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          20.000000000000004,
+          -34.64101615137754,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          300.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "The recursive learning architecture combining User DNA (Content) with Sophie DNA (Synthetic Growth).",
+    "components": []
+  }
+}

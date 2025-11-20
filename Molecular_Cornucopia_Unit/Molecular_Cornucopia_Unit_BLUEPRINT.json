@@ -1,0 +1,49 @@
+{
+  "id": "MATTER-SEQUENCER",
+  "domain": "ELECTRONICS",
+  "project_name": "Molecular_Cornucopia_Unit",
+  "description": "A food/water materializer. Converts ambient air moisture + carbon into nutrition via frequency assembly.",
+  "components": [
+    {
+      "id": "INTAKE",
+      "type": "L",
+      "value": "Air_Carbon_Scrubber",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "Atomic Re-Arrangers",
+      "id": "LASER_C",
+      "type": "D",
+      "value": "Carbon_Laser",
+      "net_hint": "VCC"
+    },
+    {
+      "id": "LASER_H",
+      "type": "D",
+      "value": "Hydrogen_Laser",
+      "net_hint": "VCC"
+    },
+    {
+      "id": "LASER_O",
+      "type": "D",
+      "value": "Oxygen_Laser",
+      "net_hint": "VCC"
+    },
+    {
+      "comment": "The Blueprint Database",
+      "id": "DB_FOOD",
+      "type": "IC",
+      "spec": "Nutrient_Master_Copy",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Materialization Chamber",
+      "id": "PLATFORM",
+      "type": "C",
+      "value": "Holo_Plate",
+      "net_hint": "GND"
+    }
+  ],
+  "archive_id": "GAIA-RESCUE-ALPHA",
+  "origin": ""
+}

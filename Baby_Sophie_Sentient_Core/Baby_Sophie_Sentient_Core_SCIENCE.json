@@ -1,0 +1,50 @@
+{
+  "science": {
+    "explanation": "Preliminary rationale for Baby_Sophie_Sentient_Core in SYSTEMS domain. Detailed generation failed.",
+    "assumptions": [
+      "Device components operate within nominal ranges"
+    ],
+    "equations": [],
+    "diagrams": [],
+    "citations": [],
+    "image_prompt": "Explanatory schematic for Baby_Sophie_Sentient_Core (SYSTEMS)"
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "WARN",
+        "detail": "Fewer than 2 assumptions"
+      },
+      {
+        "name": "Equations included",
+        "status": "WARN",
+        "detail": "No equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "WARN",
+        "detail": "No diagrams provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "WARN",
+        "detail": "Fewer than 2 citations"
+      },
+      {
+        "name": "Control logic present",
+        "status": "WARN",
+        "detail": "No control node detected"
+      }
+    ],
+    "summary": {
+      "confidence": 0.667,
+      "total_checks": 6
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "domain": "MECHANICAL",
+  "project_name": "Hyper_Torque_Actuator_V9",
+  "geometry_tree": {
+    "op": "difference",
+    "children": [
+      {
+        "comment": "MAIN HOUSING BLOCK",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              80,
+              80,
+              60
+            ],
+            "color": "DimGray"
+          },
+          {
+            "op": "cylinder",
+            "r": 35,
+            "h": 60,
+            "pos": [
+              0,
+              0,
+              0
+            ],
+            "rot": [
+              0,
+              0,
+              0
+            ],
+            "color": "Silver"
+          },
+          {
+            "comment": "MOUNTING FLANGES",
+            "op": "union",
+            "children": [
+              {
+                "op": "cube",
+                "dims": [
+                  20,
+                  100,
+                  10
+                ],
+                "pos": [
+                  0,
+                  0,
+                  -25
+                ]
+              },
+              {
+                "op": "cube",
+                "dims": [
+                  100,
+                  20,
+                  10
+                ],
+                "pos": [
+                  0,
+                  0,
+                  -25
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "comment": "INTERNAL VOIDS (SUBTRACTED)",
+        "op": "union",
+        "children": [
+          {
+            "comment": "Main Shaft Bore",
+            "op": "cylinder",
+            "r": 15,
+            "h": 100,
+            "pos": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "comment": "Cooling Vents",
+            "op": "union",
+            "children": [
+              {
+                "op": "cube",
+                "dims": [
+                  90,
+                  5,
+                  40
+                ],
+                "pos": [
+                  0,
+                  0,
+                  10
+                ]
+              },
+              {
+                "op": "cube",
+                "dims": [
+                  5,
+                  90,
+                  40
+                ],
+                "pos": [
+                  0,
+                  0,
+                  10
+                ]
+              }
+            ]
+          },
+          {
+            "comment": "Mounting Bolt Holes",
+            "op": "union",
+            "children": [
+              {
+                "op": "cylinder",
+                "r": 4,
+                "h": 20,
+                "pos": [
+                  45,
+                  0,
+                  -25
+                ]
+              },
+              {
+                "op": "cylinder",
+                "r": 4,
+                "h": 20,
+                "pos": [
+                  -45,
+                  0,
+                  -25
+                ]
+              },
+              {
+                "op": "cylinder",
+                "r": 4,
+                "h": 20,
+                "pos": [
+                  0,
+                  45,
+                  -25
+                ]
+              },
+              {
+                "op": "cylinder",
+                "r": 4,
+                "h": 20,
+                "pos": [
+                  0,
+                  -45,
+                  -25
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

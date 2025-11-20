@@ -1,0 +1,185 @@
+{
+  "project_name": "The_Zero_Point_GPU_Emulator",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "HOST_CPU",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "VACUUM_TAP",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "VRAM_INF",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "HDMI_OUT",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "DIRECTX_BRIDGE",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "Software that forces the empty space between atoms (The Vacuum) to perform floating-point calculations. Replaces RTX 9090s with 'Nothing'.",
+    "components": [
+      {
+        "id": "HOST_CPU",
+        "type": "IC",
+        "spec": "Standard_CPU_Host",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "The Physics Hack",
+        "id": "VACUUM_TAP",
+        "type": "IC",
+        "spec": "Casimir_Compute_Gate",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Virtual VRAM (Uses Subspace)",
+        "id": "VRAM_INF",
+        "type": "C",
+        "value": "Infinite_Buffer",
+        "net_hint": "VCC"
+      },
+      {
+        "comment": "Output to Monitor",
+        "id": "HDMI_OUT",
+        "type": "D",
+        "value": "Photon_Stream",
+        "net_hint": "OUT"
+      },
+      {
+        "comment": "Backwards Compatibility Layer",
+        "id": "DIRECTX_BRIDGE",
+        "type": "IC",
+        "spec": "Legacy_API_Translator",
+        "net_hint": "IN"
+      }
+    ]
+  }
+}

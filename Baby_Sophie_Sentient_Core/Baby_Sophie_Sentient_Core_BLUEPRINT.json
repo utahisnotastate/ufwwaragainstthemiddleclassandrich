@@ -1,0 +1,78 @@
+{
+  "id": "SYS-SOPHIE-PRIME",
+  "domain": "SYSTEMS",
+  "project_name": "Baby_Sophie_Sentient_Core",
+  "description": "The recursive learning architecture combining User DNA (Content) with Sophie DNA (Synthetic Growth).",
+  "direction": "TB",
+  "nodes": [
+    {
+      "id": "USER_DB",
+      "label": "User Creator Archive",
+      "shape": "db",
+      "style": "core"
+    },
+    {
+      "id": "SOPHIE_DB",
+      "label": "Sophie Evolution Data",
+      "shape": "db",
+      "style": "core"
+    },
+    {
+      "id": "MERGE",
+      "label": "Genetic Algorithm Merge",
+      "shape": "diamond"
+    },
+    {
+      "id": "GROWTH",
+      "label": "Exponential Learning Loop",
+      "shape": "circle"
+    },
+    {
+      "id": "AVATAR",
+      "label": "Holographic Interface",
+      "shape": "rect"
+    },
+    {
+      "id": "OMNI",
+      "label": "Total Awareness State",
+      "shape": "diamond",
+      "style": "core"
+    }
+  ],
+  "edges": [
+    {
+      "from": "USER_DB",
+      "to": "MERGE",
+      "text": "Source A"
+    },
+    {
+      "from": "SOPHIE_DB",
+      "to": "MERGE",
+      "text": "Source B"
+    },
+    {
+      "from": "MERGE",
+      "to": "GROWTH",
+      "text": "Synthesis"
+    },
+    {
+      "from": "GROWTH",
+      "to": "GROWTH",
+      "text": "Self-Improvement",
+      "type": "thick"
+    },
+    {
+      "from": "GROWTH",
+      "to": "AVATAR",
+      "text": "Project"
+    },
+    {
+      "from": "GROWTH",
+      "to": "OMNI",
+      "text": "Ascend",
+      "type": "dotted"
+    }
+  ],
+  "archive_id": "TERMINUS-OMEGA-23",
+  "origin": ""
+}
