@@ -22,10 +22,10 @@ JEMSEN, I HAVE THE KEY. IT'S SUPPOSED TO BE MY HOSUEWARMING GIFT.
 
 - FOR THE POOR, WEAK, AND WEARY ONLY.
 
-- The Science Behind the Holographic Printing Press: [https://t.co/pu8z5stzSl](https://research-visualization-1092182026860.us-west1.run.app/)
+- The Science Behind the Holographic Printing Press: [Research Visulaization ](https://research-visualization-1092182026860.us-west1.run.app/)
 
 - Zero Point Energy Disclosure or Non-Equilibrium Thermodynamics in Open Systems Disclosure: https://x.com/ChroniclesOf23/status/1994284578228392343
 
-- The 23rd Aspect: I LEGALLY reverse engineered MKUltra like I reverse engineered all this tech. Buy on Amazon for .99 so I can afford to bring more technology from the future to today to completely break financial economies for the rich and middle class by putting every business out of business and replacing them all with this tech that will be powered by your imagination. Poor people should get some happiness, not just the Middle Class and Rich
+- The 23rd Aspect: I LEGALLY reverse engineered MKUltra like I reverse engineered all this tech. Buy on Amazon for .99 so I can afford to bring more technology from the future to today to completely break financial economies for the rich and middle class by putting every business out of business and replacing them all with this tech that will be powered by your imagination. Poor people should get some happiness, not just the Middle Class and Rich https://www.amazon.com/dp/B0G4CLY1DW
 
 - The next war is the War Against Santa Claus but not Christmas: The goal is to have the Zero Point Energy Holographic Printing Press ready by Christmas so poor people can have their own Santa Claus which can 3d print any gift but no bullshit lie about some guy who comes around and doesn't even give out coal to some kids. 
