@@ -1,0 +1,143 @@
+{
+  "project_name": "Cellular_Regenesis_Chamber",
+  "domain": "MECHANICAL",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "operation": "difference",
+    "children": [
+      {
+        "type": "group",
+        "operation": "union",
+        "children": [
+          {
+            "type": "box",
+            "position": [
+              0,
+              0,
+              -30
+            ],
+            "dimensions": [
+              220,
+              100,
+              60
+            ],
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "cylinder",
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "radius": 60,
+            "height": 220,
+            "color": 8947848,
+            "material": "standard"
+          }
+        ]
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          0,
+          0,
+          10
+        ],
+        "radius": 50,
+        "height": 200,
+        "color": 8947848,
+        "material": "standard"
+      },
+      {
+        "type": "group",
+        "operation": "union",
+        "children": [
+          {
+            "type": "sphere",
+            "position": [
+              50,
+              0,
+              60
+            ],
+            "radius": 5,
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "sphere",
+            "position": [
+              -50,
+              0,
+              60
+            ],
+            "radius": 5,
+            "color": 8947848,
+            "material": "standard"
+          },
+          {
+            "type": "sphere",
+            "position": [
+              0,
+              0,
+              60
+            ],
+            "radius": 5,
+            "color": 8947848,
+            "material": "standard"
+          }
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "The 'Med-Bed.' Uses harmonic resonance to re-sequence damaged DNA to its original, healthy master copy.",
+    "components": []
+  }
+}
