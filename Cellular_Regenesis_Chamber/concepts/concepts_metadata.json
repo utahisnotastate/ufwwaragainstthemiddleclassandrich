@@ -1,0 +1,37 @@
+{
+  "concepts": [
+    {
+      "id": 1,
+      "url": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_1.png",
+      "path": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_1.png",
+      "prompt": "a basic cellular genesis chamber that anyone can put together, minimalist design, clean lines",
+      "selected": false,
+      "status": "success"
+    },
+    {
+      "id": 2,
+      "url": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_2.png",
+      "path": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_2.png",
+      "prompt": "a basic cellular genesis chamber that anyone can put together, futuristic aesthetic, cyberpunk style",
+      "selected": false,
+      "status": "success"
+    },
+    {
+      "id": 3,
+      "url": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_3.png",
+      "path": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_3.png",
+      "prompt": "a basic cellular genesis chamber that anyone can put together, industrial design, rugged appearance",
+      "selected": false,
+      "status": "success"
+    },
+    {
+      "id": 4,
+      "url": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_4.png",
+      "path": "/artifacts/Cellular_Regenesis_Chamber/concepts/concept_4.png",
+      "prompt": "a basic cellular genesis chamber that anyone can put together, elegant and sleek, premium finish",
+      "selected": false,
+      "status": "success"
+    }
+  ],
+  "generated_at": "2025-12-05T00:51:22Z"
+}
