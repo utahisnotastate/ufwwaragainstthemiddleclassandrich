@@ -65,6 +65,7 @@ JEMSEN, I HAVE THE KEY. IT'S SUPPOSED TO BE MY HOSUEWARMING GIFT.
 - FOR THE POOR, WEAK, AND WEARY ONLY.
 
 - The Science Behind the Holographic Printing Press: [Research Visulaization ](https://research-visualization-1092182026860.us-west1.run.app/)
+- Same, but for 12 year olds: https://github.com/utahisnotastate/ufwlearntherealhp
 
 - Zero Point Energy Disclosure or Non-Equilibrium Thermodynamics in Open Systems Disclosure: https://x.com/ChroniclesOf23/status/1994284578228392343
 
