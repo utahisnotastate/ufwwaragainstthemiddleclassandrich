@@ -74,4 +74,6 @@ JEMSEN, I HAVE THE KEY. IT'S SUPPOSED TO BE MY HOSUEWARMING GIFT.
 - The 23rd Aspect: I LEGALLY reverse engineered MKUltra like I reverse engineered all this tech. Buy on Amazon for .99 so I can afford to bring more technology from the future to today to completely break financial economies for the rich and middle class by putting every business out of business and replacing them all with this tech that will be powered by your imagination. Poor people should get some happiness, not just the Middle Class and Rich https://www.amazon.com/dp/B0G4CLY1DW
 
 - The next war is the War Against Santa Claus but not Christmas: The goal is to have the Zero Point Energy Holographic Printing Press ready by Christmas so poor people can have their own Santa Claus which can 3d print any gift but no bullshit lie about some guy who comes around and doesn't even give out coal to some kids.
+
+-  FOR ANYONE WONDERING WTF THE BUREACRACY BYPASS PROTOCOL IS. THAT IS SOMETHING FOR GOVERNMENTS AND LAW ENFROCEMENT ON OTHER PLANETS. I DON'T SEE HOW ITS POSSIBLE HERE (EARTH-1) BECAUSE OF HOW SMALL WE ARE. IDK HOW YOU USE THAT ON EARTH-1, BUT IT'S VITAL FOR OTHER PLANETS. 
 - 
