@@ -1,0 +1,10 @@
+designator,generic_name,real_part_number,manufacturer,price
+SINGULARITY_CORE,Zero_Point_Source,D24M08-ND,Maxim Integrated,1.50
+EMIT_NORTH,Tesla_Coil_N,637-1294-ND,Mouser Electronics,15.00
+EMIT_SOUTH,Tesla_Coil_S,637-1294-ND,Mouser Electronics,15.00
+EMIT_EAST,Tesla_Coil_E,637-1294-ND,Mouser Electronics,15.00
+EMIT_WEST,Tesla_Coil_W,637-1294-ND,Mouser Electronics,15.00
+MIRROR_A,Barium_Titanate,8637K129,McMaster Carr,45.00
+MIRROR_B,Barium_Titanate,8637K129,McMaster Carr,45.00
+OSC_MAIN,Schumann_Resonator,CD74HC4060N,Texas Instruments,1.25
+STABILIZER,Flux_Capacitor_Ref,CMC18X7R106K085CT-ND,Mouser Electronics,0.25
