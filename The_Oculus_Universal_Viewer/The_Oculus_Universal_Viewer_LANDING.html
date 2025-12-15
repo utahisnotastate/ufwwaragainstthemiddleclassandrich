@@ -1,0 +1,73 @@
+Here's the code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oculus Universal Viewer</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: 'Futura', sans-serif;
+            color: #fff;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #111;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Oculus Universal Viewer</h1>
+        <p>A brutalist masterpiece of a viewer, capable of displaying any file type.</p>
+        <button>Upload File</button>
+        <input type="file" id="file-input" style="display: none;">
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('file-input');
+        
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+            
+            reader.onload = () => {
+                const binaryData = reader.result;
+                const fileExtension = file.name.split('.').pop().toLowerCase();
+                
+                if (fileExtension === 'txt') {
+                    document.body.innerHTML = '<pre>' + binaryData + '</pre>';
+                } else if (fileExtension === 'jpg' || fileExtension === 'jpeg' || fileExtension === 'png') {
+                    const img = document.createElement('img');
+                    img.src = URL.createObjectURL(file);
+                    document.body.appendChild(img);
+                } else {
+                    alert('Unsupported file type');
+                }
+            };
+            
+            reader.readAsBinaryString(file);
+        });
+    </script>
+</body>
+</html>
+```
+
+This code creates a simple web page with a brutalist design, featuring a dark background and white text. The page includes a container element that holds the viewer's interface, which consists of a heading, a paragraph of text, and an upload button. When a file is uploaded, the viewer displays its contents based on the file type.
