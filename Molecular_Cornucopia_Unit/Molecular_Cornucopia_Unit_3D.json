@@ -1,0 +1,197 @@
+{
+  "project_name": "Molecular_Cornucopia_Unit",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          8,
+          8,
+          4
+        ],
+        "color": 6710886,
+        "material": "standard",
+        "label": "INTAKE",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "LASER_C",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "LASER_H",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "LASER_O",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "DB_FOOD",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "PLATFORM",
+        "position": [
+          -80,
+          -10,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "A food/water materializer. Converts ambient air moisture + carbon into nutrition via frequency assembly.",
+    "components": [
+      {
+        "id": "INTAKE",
+        "type": "L",
+        "value": "Air_Carbon_Scrubber",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "Atomic Re-Arrangers",
+        "id": "LASER_C",
+        "type": "D",
+        "value": "Carbon_Laser",
+        "net_hint": "VCC"
+      },
+      {
+        "id": "LASER_H",
+        "type": "D",
+        "value": "Hydrogen_Laser",
+        "net_hint": "VCC"
+      },
+      {
+        "id": "LASER_O",
+        "type": "D",
+        "value": "Oxygen_Laser",
+        "net_hint": "VCC"
+      },
+      {
+        "comment": "The Blueprint Database",
+        "id": "DB_FOOD",
+        "type": "IC",
+        "spec": "Nutrient_Master_Copy",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Materialization Chamber",
+        "id": "PLATFORM",
+        "type": "C",
+        "value": "Holo_Plate",
+        "net_hint": "GND"
+      }
+    ]
+  }
+}
