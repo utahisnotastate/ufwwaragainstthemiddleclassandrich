@@ -1,0 +1,21 @@
+graph LR
+    %% Style Definitions
+    classDef core fill:#ff9,stroke:#333,stroke-width:2px;
+    classDef db fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ext fill:#f9f,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
+    EYE(("User Perception"))
+    class EYE core
+    LENS_1["Micro-Lens (Atoms)"]
+    LENS_2["Macro-Lens (Galaxies)"]
+    LENS_3["Chrono-Lens (Time)"]
+    LENS_4{"Meta-Lens (Truth)"}
+    class LENS_4 core
+    DISPLAY("Omniscient Overlay")
+    EYE --> |Zoom In| LENS_1
+    EYE --> |Zoom Out| LENS_2
+    EYE --> |Rewind/FastFwd| LENS_3
+    EYE --> |Reveal Intent| LENS_4
+    LENS_1 --> |Data Stream| DISPLAY
+    LENS_2 --> |Data Stream| DISPLAY
+    LENS_3 --> |Data Stream| DISPLAY
+    LENS_4 --> |Data Stream| DISPLAY

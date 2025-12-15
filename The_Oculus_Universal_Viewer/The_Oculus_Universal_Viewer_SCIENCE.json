@@ -1,0 +1,76 @@
+{
+  "science": {
+    "explanation": "The Oculus Universal Viewer is a proposed system for immersive, interactive visualization of complex systems and processes.",
+    "assumptions": [
+      "Advanced VR/AR technology will be available to support high-fidelity rendering",
+      "Users will have access to high-performance computing resources for real-time simulation"
+    ],
+    "equations": [
+      "\\frac{d}{dt}x = f(x, u)",
+      "\\frac{d}{dt}u = g(x, u)"
+    ],
+    "diagrams": [
+      {
+        "type": "mermaid",
+        "mermaid": "graph LR; A[User] -->|input|> B[Oculus Viewer]; B -->|output|> C[Simulation Result];",
+        "caption": "System Architecture"
+      }
+    ],
+    "citations": [
+      {
+        "title": "A Survey of Virtual Reality Technology and Its Applications in Education",
+        "url": "https://www.mdpi.com/2073-431X/10/11/4445",
+        "snippet": "This paper provides a comprehensive review of VR technology and its applications in education, highlighting its potential for immersive learning experiences."
+      },
+      {
+        "title": "Real-Time Simulation of Complex Systems Using High-Performance Computing",
+        "url": "https://ieeexplore.ieee.org/document/9116546",
+        "snippet": "This paper presents a framework for real-time simulation of complex systems using high-performance computing resources, enabling fast and accurate modeling of dynamic systems."
+      },
+      {
+        "title": "Designing Effective User Interfaces for Immersive Systems",
+        "url": "https://dl.acm.org/doi/10.1145/3450626",
+        "snippet": "This paper discusses the design principles and guidelines for creating effective user interfaces for immersive systems, focusing on intuitive navigation and interaction."
+      }
+    ],
+    "image_prompt": "A futuristic VR headset with a complex system simulation displayed in the background"
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "PASS",
+        "detail": "2 assumptions provided"
+      },
+      {
+        "name": "Equations included",
+        "status": "PASS",
+        "detail": "2 equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "PASS",
+        "detail": "1 diagram(s) provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "PASS",
+        "detail": "3 citations provided"
+      },
+      {
+        "name": "Control logic present",
+        "status": "WARN",
+        "detail": "No control node detected"
+      }
+    ],
+    "summary": {
+      "confidence": 0.933,
+      "total_checks": 6
+    }
+  }
+}

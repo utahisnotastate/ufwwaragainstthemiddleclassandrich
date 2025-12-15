@@ -1,0 +1,85 @@
+{
+  "id": "SYS-ALL-SEEING",
+  "domain": "SYSTEMS",
+  "project_name": "The_Oculus_Universal_Viewer",
+  "description": "Allows the user to 'See Everything'\u00e2\u20ac\u201dpast, present, future, and alternate timelines\u00e2\u20ac\u201dsimultaneously.",
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "EYE",
+      "label": "User Perception",
+      "shape": "circle",
+      "style": "core"
+    },
+    {
+      "id": "LENS_1",
+      "label": "Micro-Lens (Atoms)",
+      "shape": "rect"
+    },
+    {
+      "id": "LENS_2",
+      "label": "Macro-Lens (Galaxies)",
+      "shape": "rect"
+    },
+    {
+      "id": "LENS_3",
+      "label": "Chrono-Lens (Time)",
+      "shape": "rect"
+    },
+    {
+      "id": "LENS_4",
+      "label": "Meta-Lens (Truth)",
+      "shape": "diamond",
+      "style": "core"
+    },
+    {
+      "id": "DISPLAY",
+      "label": "Omniscient Overlay",
+      "shape": "round"
+    }
+  ],
+  "edges": [
+    {
+      "from": "EYE",
+      "to": "LENS_1",
+      "text": "Zoom In"
+    },
+    {
+      "from": "EYE",
+      "to": "LENS_2",
+      "text": "Zoom Out"
+    },
+    {
+      "from": "EYE",
+      "to": "LENS_3",
+      "text": "Rewind/FastFwd"
+    },
+    {
+      "from": "EYE",
+      "to": "LENS_4",
+      "text": "Reveal Intent"
+    },
+    {
+      "from": "LENS_1",
+      "to": "DISPLAY",
+      "text": "Data Stream"
+    },
+    {
+      "from": "LENS_2",
+      "to": "DISPLAY",
+      "text": "Data Stream"
+    },
+    {
+      "from": "LENS_3",
+      "to": "DISPLAY",
+      "text": "Data Stream"
+    },
+    {
+      "from": "LENS_4",
+      "to": "DISPLAY",
+      "text": "Data Stream"
+    }
+  ],
+  "archive_id": "OMEGA-POINT-30000",
+  "origin": "Timeline_T_Infinity"
+}
