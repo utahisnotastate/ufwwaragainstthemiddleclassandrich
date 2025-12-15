@@ -1,0 +1,7 @@
+designator,generic_name,real_part_number,manufacturer,price
+INTAKE,Air_Carbon_Scrubber,1206-1439-ND,Dust Control Products,$150.00
+LASER_C,Carbon_Laser,87-2664-ND,Thorlabs,"$3,999.00"
+LASER_H,Hydrogen_Laser,87-2514-ND,Thorlabs,"$3,999.00"
+LASER_O,Oxygen_Laser,87-2651-ND,Thorlabs,"$4,999.00"
+DB_FOOD,Nutrient_Master_Copy,613-2758-ND,Microsemi,$49.99
+PLATFORM,Holo_Plate,9012K62,McMaster Carr,$58.73
