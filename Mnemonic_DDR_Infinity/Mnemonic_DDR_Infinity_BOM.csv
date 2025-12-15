@@ -1,0 +1,6 @@
+designator,generic_name,real_part_number,manufacturer,price
+SLOT,DDR5_Form_Factor_IC,KHX40C21BBK8/32,Kingston Technology,$79.99
+Q_BIT_1,Quantum_Cache_A_Capacitor,06035C104KACTU-ND,"Murata Manufacturing Co., Ltd.",$0.29
+Q_BIT_2,Quantum_Cache_B_Capacitor,06035C104KACTU-ND,"Murata Manufacturing Co., Ltd.",$0.29
+CTRL_MEM,Non_Local_Address_Bus_IC,74LVC16385MTC-7,Nexperia America Inc.,$0.99
+Q_LINK_CORE,Quantum_Entanglement_Core_IC,MAX14832EUT+T,"Maxim Integrated Products, Inc.",$5.99
