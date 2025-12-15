@@ -1,0 +1,76 @@
+{
+  "science": {
+    "explanation": "The Hyper Torque Actuator V9 is a novel mechanical system designed to provide high torque output while minimizing energy consumption.",
+    "assumptions": [
+      "The actuator will operate in a controlled environment with minimal external disturbances.",
+      "The system's efficiency can be improved through optimal design and material selection."
+    ],
+    "equations": [
+      "\\tau = I \\alpha",
+      "\\tau = F r"
+    ],
+    "diagrams": [
+      {
+        "type": "mermaid",
+        "mermaid": "graph LR; A[Motor] -->|Torque|> B[Pump]; B -->|Pressure|> C[Tank];",
+        "caption": "System Overview"
+      }
+    ],
+    "citations": [
+      {
+        "title": "Design and Analysis of High-Torque Actuators for Industrial Applications",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0959652618301165",
+        "snippet": "This paper presents a comprehensive review of high-torque actuator design principles and analysis methods."
+      },
+      {
+        "title": "Energy-Efficient Design of Mechanical Systems",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/00207494.2018.1475144",
+        "snippet": "The authors discuss various techniques for improving the energy efficiency of mechanical systems, including optimal design and material selection."
+      },
+      {
+        "title": "Torque Amplification in Mechanical Systems Using Non-Linear Components",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0022460X17301345",
+        "snippet": "This paper explores the use of non-linear components to amplify torque output in mechanical systems."
+      }
+    ],
+    "image_prompt": ""
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "PASS",
+        "detail": "2 assumptions provided"
+      },
+      {
+        "name": "Equations included",
+        "status": "PASS",
+        "detail": "2 equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "PASS",
+        "detail": "1 diagram(s) provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "PASS",
+        "detail": "3 citations provided"
+      },
+      {
+        "name": "Structural elements",
+        "status": "WARN",
+        "detail": "No obvious structural elements"
+      }
+    ],
+    "summary": {
+      "confidence": 0.933,
+      "total_checks": 6
+    }
+  }
+}
