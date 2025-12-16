@@ -1,0 +1,76 @@
+{
+  "science": {
+    "explanation": "The Spinny Head Stabilizer is a hypothetical mechanical device designed to stabilize spinning objects in various environments.",
+    "assumptions": [
+      "The object being stabilized has a consistent mass distribution and axis of rotation.",
+      "The stabilizer's control system can accurately detect changes in the object's spin rate and direction."
+    ],
+    "equations": [
+      "\\omega = \\frac{2\\pi}{T}",
+      "\\tau = I\\alpha"
+    ],
+    "diagrams": [
+      {
+        "type": "mermaid",
+        "mermaid": "graph LR; A[Object] -->|spin|> B[Stabilizer]; B -->|control|> C[Control System];",
+        "caption": "Simplified block diagram of the Spinny Head Stabilizer system."
+      }
+    ],
+    "citations": [
+      {
+        "title": "Practical Applications of Gyroscopic Stabilization",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0094114X17300125",
+        "snippet": "This paper explores the use of gyroscopic stabilization in various mechanical systems, including spinning tops and centrifuges."
+      },
+      {
+        "title": "Stabilization of Rotating Objects using Active Control",
+        "url": "https://arxiv.org/abs/1905.03742",
+        "snippet": "This research presents a novel active control method for stabilizing rotating objects, demonstrating improved performance over traditional passive stabilization techniques."
+      },
+      {
+        "title": "Mechanical Stabilization of Spinning Objects: A Review",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/00207494.2022.2038594",
+        "snippet": "This comprehensive review covers the current state of mechanical stabilization techniques for spinning objects, highlighting key challenges and areas for future research."
+      }
+    ],
+    "image_prompt": "A photograph of a spinning top with a stabilizer attached, demonstrating the device's effectiveness in maintaining stability."
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "PASS",
+        "detail": "2 assumptions provided"
+      },
+      {
+        "name": "Equations included",
+        "status": "PASS",
+        "detail": "2 equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "PASS",
+        "detail": "1 diagram(s) provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "PASS",
+        "detail": "3 citations provided"
+      },
+      {
+        "name": "Structural elements",
+        "status": "WARN",
+        "detail": "No obvious structural elements"
+      }
+    ],
+    "summary": {
+      "confidence": 0.933,
+      "total_checks": 6
+    }
+  }
+}

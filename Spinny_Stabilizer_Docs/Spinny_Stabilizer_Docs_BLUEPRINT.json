@@ -1,0 +1,20 @@
+{
+  "id": "PRODUCT-MANUAL",
+  "domain": "DOCUMENTATION",
+  "project_name": "Spinny_Stabilizer_Docs",
+  "doc_type": "MANUAL",
+  "intro": "Congratulations on acquiring the Spinny Head Stabilizer. This device employs resonant frequencies to synchronize your cognitive processes.",
+  "sections": [
+    {
+      "title": "Installation",
+      "body": "1. Affix the stabilizer atop your head.\n2. Engage the resonance mechanism.\n3. Await cessation of rotational oscillation."
+    },
+    {
+      "title": "Troubleshooting",
+      "body": "In the event of accelerated ideation, modify the ring by rotating it 15 degrees in an anti-clockwise direction."
+    }
+  ],
+  "warnings": "Prohibition against use during operation of heavy machinery or manipulation of temporal portals.",
+  "archive_id": "LAUNCH-DAY-OMEGA",
+  "origin": "Un-squelched Time Channel"
+}

@@ -1,0 +1,45 @@
+{
+  "science": {
+    "explanation": "Preliminary rationale for Spinny_Stabilizer_Ad_Copy in DOCUMENTATION domain. Detailed generation failed.",
+    "assumptions": [
+      "Device components operate within nominal ranges"
+    ],
+    "equations": [],
+    "diagrams": [],
+    "citations": [],
+    "image_prompt": "Explanatory schematic for Spinny_Stabilizer_Ad_Copy (DOCUMENTATION)"
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "WARN",
+        "detail": "Fewer than 2 assumptions"
+      },
+      {
+        "name": "Equations included",
+        "status": "WARN",
+        "detail": "No equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "WARN",
+        "detail": "No diagrams provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "WARN",
+        "detail": "Fewer than 2 citations"
+      }
+    ],
+    "summary": {
+      "confidence": 0.68,
+      "total_checks": 5
+    }
+  }
+}

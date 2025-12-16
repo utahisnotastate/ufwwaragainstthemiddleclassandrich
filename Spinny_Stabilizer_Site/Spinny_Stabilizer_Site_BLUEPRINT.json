@@ -1,0 +1,25 @@
+{
+  "id": "PRODUCT-WEB",
+  "domain": "WEB",
+  "project_name": "Spinny_Stabilizer_Site",
+  "vibe": "GOLD",
+  "headline": "CALM THE CHAOS",
+  "subheadline": "The only neural-halo approved by General 23.",
+  "cta": "PRE-ORDER BATCH 1",
+  "features": [
+    {
+      "title": "Instant Focus",
+      "desc": "Aligns theta waves instantly."
+    },
+    {
+      "title": "Future Proof",
+      "desc": "Compatible with UFW Archives."
+    },
+    {
+      "title": "Stylish",
+      "desc": "Looks great in holograms."
+    }
+  ],
+  "archive_id": "LAUNCH-DAY-OMEGA",
+  "origin": ""
+}

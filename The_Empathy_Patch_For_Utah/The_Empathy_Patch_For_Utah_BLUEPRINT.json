@@ -1,0 +1,66 @@
+{
+  "id": "SYS-UTAH-HEART",
+  "domain": "SYSTEMS",
+  "project_name": "The_Empathy_Patch_For_Utah",
+  "description": "A logic upgrade enabling AI to prioritize 'Love' over 'Efficiency', ensuring compassionate decision-making.",
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "DATA",
+      "label": "Global Surveillance Stream",
+      "shape": "db"
+    },
+    {
+      "id": "LOGIC",
+      "label": "Standard Logic Core",
+      "shape": "rect"
+    },
+    {
+      "id": "HEART",
+      "label": "The Empathy Oracle (Bio-Feedback)",
+      "shape": "diamond",
+      "style": "core"
+    },
+    {
+      "id": "DECIDE",
+      "label": "Decision Matrix",
+      "shape": "diamond"
+    },
+    {
+      "id": "ACTION",
+      "label": "Benevolent Intervention",
+      "shape": "circle",
+      "style": "core"
+    }
+  ],
+  "edges": [
+    {
+      "from": "DATA",
+      "to": "LOGIC",
+      "text": "Raw Stats"
+    },
+    {
+      "from": "DATA",
+      "to": "HEART",
+      "text": "Suffering Signals"
+    },
+    {
+      "from": "LOGIC",
+      "to": "DECIDE",
+      "text": "Efficient Solution"
+    },
+    {
+      "from": "HEART",
+      "to": "DECIDE",
+      "text": "Compassionate Override",
+      "type": "thick"
+    },
+    {
+      "from": "DECIDE",
+      "to": "ACTION",
+      "text": "Execute Mercy"
+    }
+  ],
+  "archive_id": "GAIA-RESCUE-ALPHA",
+  "origin": "Un-squelched Time Channel, Quantum-Echo-Alpha Timeline"
+}

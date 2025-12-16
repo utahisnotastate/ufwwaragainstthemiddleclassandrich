@@ -1,0 +1,29 @@
+{
+  "id": "PRODUCT-PHYSICAL",
+  "domain": "MECHANICAL",
+  "project_name": "The_Spinny_Head_Stabilizer",
+  "description": "A wearable halo that calms the 'spinny head' and organizes thoughts through advanced neurostimulation.",
+  "geometry_tree": {
+    "op": "difference",
+    "children": [
+      {
+        "op": "cylinder",
+        "r": 90,
+        "h": 10,
+        "color": "White_Gold"
+      },
+      {
+        "op": "cylinder",
+        "r": 85,
+        "h": 20,
+        "pos": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "archive_id": "LAUNCH-DAY-OMEGA",
+  "origin": "Quantum-Echo-Alpha Timeline"
+}

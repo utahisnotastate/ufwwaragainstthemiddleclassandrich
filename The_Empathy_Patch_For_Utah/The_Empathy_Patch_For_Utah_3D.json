@@ -1,0 +1,229 @@
+{
+  "project_name": "The_Empathy_Patch_For_Utah",
+  "domain": "SYSTEMS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "sphere",
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "radius": 30,
+        "color": 39423,
+        "material": "glow"
+      },
+      {
+        "type": "box",
+        "position": [
+          80.0,
+          0.0,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          40.0,
+          0.0,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          0.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          24.721359549995796,
+          76.08452130361228,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          12.360679774997898,
+          38.04226065180614,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          72.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          -64.72135954999578,
+          47.02282018339786,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          -32.36067977499789,
+          23.51141009169893,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          144.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          -64.7213595499958,
+          -47.02282018339784,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          -32.3606797749979,
+          -23.51141009169892,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          216.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      },
+      {
+        "type": "box",
+        "position": [
+          24.72135954999578,
+          -76.08452130361229,
+          0
+        ],
+        "dimensions": [
+          20,
+          20,
+          20
+        ],
+        "color": 16750848,
+        "material": "standard"
+      },
+      {
+        "type": "cylinder",
+        "position": [
+          12.36067977499789,
+          -38.042260651806146,
+          0
+        ],
+        "radius": 2,
+        "height": 80.0,
+        "rotation": [
+          0,
+          0,
+          288.0
+        ],
+        "color": 6710886,
+        "material": "wire"
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "The logic upgrade Utah wished it had. Allows the AI to prioritize 'Love' over 'Efficiency'.",
+    "components": []
+  }
+}

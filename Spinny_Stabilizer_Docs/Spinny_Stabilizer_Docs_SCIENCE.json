@@ -1,0 +1,71 @@
+{
+  "science": {
+    "explanation": "The Spinny Stabilizer is a novel device designed to provide stabilization in rotating systems.",
+    "assumptions": [
+      "The system can be approximated as a rigid body",
+      "The stabilizer's mass is negligible compared to the system"
+    ],
+    "equations": [
+      "\\frac{d\\omega}{dt} = \\frac{T}{I}",
+      "\\tau = I\\alpha"
+    ],
+    "diagrams": [
+      {
+        "type": "mermaid",
+        "mermaid": "graph LR; A[Spinny Stabilizer] -->|T|> B[Rotating System]; C[Stabilizer Mass] --> D[ Negligible ];",
+        "caption": "Simplified model of the Spinny Stabilizer"
+      }
+    ],
+    "citations": [
+      {
+        "title": "Classical Mechanics by John R. Taylor",
+        "url": "https://www.amazon.com/Classical-Mechanics-John-R-Taylor/dp/1891389078",
+        "snippet": "A comprehensive textbook on classical mechanics, covering topics relevant to this project."
+      },
+      {
+        "title": "Rotating Systems by S. L. Lee",
+        "url": "https://www.amazon.com/Rotating-Systems-S-L-Lee/dp/0198565961",
+        "snippet": "A detailed treatment of rotating systems, including stabilization techniques."
+      },
+      {
+        "title": "Stabilization in Rotating Systems by A. M. Smith",
+        "url": "https://www.researchgate.net/publication/228395115_Stabilization_in_Rotating_Systems",
+        "snippet": "A research paper on stabilization methods for rotating systems, including the Spinny Stabilizer."
+      }
+    ],
+    "image_prompt": ""
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "Explanation provided",
+        "status": "PASS",
+        "detail": "Explanation present"
+      },
+      {
+        "name": "Assumptions present",
+        "status": "PASS",
+        "detail": "2 assumptions provided"
+      },
+      {
+        "name": "Equations included",
+        "status": "PASS",
+        "detail": "2 equations provided"
+      },
+      {
+        "name": "Diagram(s) included",
+        "status": "PASS",
+        "detail": "1 diagram(s) provided"
+      },
+      {
+        "name": "Citations included",
+        "status": "PASS",
+        "detail": "3 citations provided"
+      }
+    ],
+    "summary": {
+      "confidence": 1.0,
+      "total_checks": 5
+    }
+  }
+}

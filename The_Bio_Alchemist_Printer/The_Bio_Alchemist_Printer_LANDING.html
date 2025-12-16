@@ -1,0 +1,56 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bio-Alchemist Printer</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: monospace;
+            color: #f00;
+        }
+        
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+        
+        .printer-container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+        }
+        
+        .printer-container h2 {
+            color: #f00;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="printer-container">
+        <h1>The Bio-Alchemist Printer</h1>
+        <h2>Cyber-Brutalist Edition</h2>
+        <p>Warning: This printer is not for the faint of heart. It will unleash a torrent of genetic code upon your unsuspecting DNA.</p>
+        <button class="print-button">Print Genetic Code</button>
+    </div>
+
+    <script>
+        const printButton = document.querySelector('.print-button');
+        
+        printButton.addEventListener('click', () => {
+            alert("Printing genetic code... ");
+            // Simulate printing process
+            setTimeout(() => {
+                alert("Genetic code printed. Your DNA has been modified.");
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
+```

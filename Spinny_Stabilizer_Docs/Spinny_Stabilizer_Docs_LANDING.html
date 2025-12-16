@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYS.DOCS//SPINNY_STABILIZER</title>
+    <style>
+        :root {
+            --main-color: #00FF41; /* Electric Green */
+            --accent-color-1: #FF00FF; /* Magenta */
+            --accent-color-2: #00FFFF; /* Cyan */
+            --bg-color: #050505;
+            --border-color: #333;
+            --warning-color: #FF4100; /* Electric Orange */
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--main-color);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+            line-height: 1.6;
+            padding: 2rem;
+            text-shadow: 0 0 3px rgba(0, 255, 65, 0.5), 0 0 5px rgba(0, 255, 65, 0.3);
+            word-wrap: break-word;
+            overflow-x: hidden;
+        }
+
+        body::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 1px, transparent 1px, transparent 3px);
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 8vw, 4rem);
+            text-transform: uppercase;
+            color: var(--accent-color-1);
+            text-shadow: 0 0 5px var(--accent-color-1), 0 0 10px var(--accent-color-1), 0 0 20px #000;
+            letter-spacing: 0.2em;
+            position: relative;
+        }
+
+        .sub-header {
+            color: var(--accent-color-2);
+            text-shadow: 0 0 5px var(--accent-color-2);
+            letter-spacing: 0.1em;
+        }
+
+        h3 {
+            color: var(--accent-color-2);
+            text-shadow: 0 0 5px var(--accent-color-2);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent-color-2);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color-2);
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        a:hover, a:focus {
+            background-color: var(--accent-color-2);
+            color: var(--bg-color);
+            text-shadow: none;
+        }
+
+        fieldset {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: rgba(0,0,0,0.2);
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--main-color);
+            background-color: var(--bg-color);
+            padding: 0 0.5em;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--accent-color-1);
+            text-shadow: 0 0 5px var(--main-color);
+        }
+
+        .api-block {
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #080808;
+        }
+
+        pre {
+            background-color: rgba(0, 255, 65, 0.05);
+            border: 1px solid #222;
+            padding: 1em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            box-shadow: inset 0 0 10px #000;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .prop {
+            color: var(--accent-color-2);
+        }
+
+        .warning {
+            color: var(--warning-color);
+            font-weight: 700;
+            text-shadow: 0 0 5px var(--warning-color);
+            background: rgba(255, 65, 0, 0.1);
+            padding: 2px 4px;
+            border: 1px dotted var(--warning-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid var(--border-color);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #111;
+            color: var(--accent-color-1);
+            text-transform: uppercase;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgba(0, 255, 65, 0.02);
+        }
+
+        tbody tr:hover {
+            background-color: rgba(0, 255, 65, 0.1);
+        }
+
+        td:nth-child(2) {
+            color: var(--warning-color);
+        }
+
+        .glitch {
+            animation: glitch-anim 3s infinite steps(2, end);
+        }
+
+        .glitch::before,
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+        }
+
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 var(--accent-color-2);
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+            animation: glitch-anim-2 3s infinite steps(2, end);
+        }
+
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 var(--main-color), 2px 2px var(--accent-color-2);
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+            animation: glitch-anim-1 3s infinite steps(2, end);
+        }
+
+        @keyframes glitch-anim-1 {
+            0% { clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%); } 10% { clip-path: polygon(0 25%, 100% 25%, 100% 50%, 0 50%); } 20% { clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%); } 30% { clip-path: polygon(0 40%, 100% 40%, 100% 55%, 0 55%); } 40% { clip-path: polygon(0 10%, 100% 10%, 100% 30%, 0 30%); } 50% { clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0 100%); } 60% { clip-path: polygon(0 50%, 100% 50%, 100% 60%, 0 60%); } 70% { clip-path: polygon(0 5%, 100% 5%, 100% 15%, 0 15%); } 80% { clip-path: polygon(0 75%, 100% 75%, 100% 95%, 0 95%); } 90% { clip-path: polygon(0 35%, 100% 35%, 100% 45%, 0 45%); } 100% { clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%); }
+        }
+        @keyframes glitch-anim-2 {
+            0% { clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%); } 5% { clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%); } 10% { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); } 15% { clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%); } 20% { clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%); } 25% { clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%); } 30% { clip-path: polygon(0 95%, 100% 95%, 100% 100%, 0 100%); } 35% { clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%); } 40% { clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%); } 45% { clip-path: polygon(0 80%, 100% 80%, 100% 90%, 0 90%); } 50% { clip-path: polygon(0 40%, 100% 40%, 100% 50%, 0 50%); } 55% { clip-path: polygon(0 5%, 100% 5%, 100% 15%, 0 15%); } 60% { clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); } 65% { clip-path: polygon(0 30%, 100% 30%, 100% 40%, 0 40%); } 70% { clip-path: polygon(0 90%, 100% 90%, 100% 100%, 0 100%); } 75% { clip-path: polygon(0 55%, 100% 55%, 100% 65%, 0 65%); } 80% { clip-path: polygon(0 25%, 100% 25%, 100% 35%, 0 35%); } 85% { clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%); } 90% { clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%); } 95% { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); } 100% { clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%); }
+        }
+        @keyframes glitch-anim {
+            0% { transform: translate(0); } 20% { transform: translate(-3px, 3px); } 40% { transform: translate(3px, -3px); } 60% { transform: translate(-3px, 3px); } 80% { transform: translate(3px, -3px); } 100% { transform: translate(0); }
+        }
+
+        footer {
+            margin-top: 4rem;
+            border-top: 2px solid var(--border-color);
+            padding-top: 1rem;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="glitch" data-text="SPINNY_STABILIZER_DOCS">SPINNY_STABILIZER_DOCS</h1>
+        <p class="sub-header">>_ CORE SYSTEMS MANUAL v3.1.4</p>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>[INIT_SEQUENCE]</legend>
+            <p>System initialization requires direct hardware handshake. Failure to comply will result in core meltdown. Refer to physical manual #7A-3 for jumper configurations.</p>
+            <pre><code>// BOOTSTRAP LOADER
+> import { SpinnyStabilizer } from '@corp/gyros';
+> const stabilizer = new SpinnyStabilizer({
+>   port: '/dev/ttyS0',
+>   baudRate: 115200,
+>   parity: 'none'
+> });
+>
+> stabilizer.init()
+>   .then(() => console.log('STATUS: [STABLE]'))
+>   .catch(err => console.error('!CORE_FAILURE!', err));</code></pre>
+        </fieldset>
+
+        <fieldset>
+            <legend>[CONFIG_VARS]</legend>
+            <p>Configuration variables are loaded from `0x00_CONFIG.HEX`. Direct memory manipulation is NOT recommended. Use the provided API endpoints. Unauthorized access is logged and reported to [REDACTED].</p>
+            <ul>
+                <li><span class="prop">MAX_RPM</span>: Maximum revolutions per minute. [Type: INT, Range: 0-9000]</li>
+                <li><span class="prop">DAMPENING_FACTOR</span>: Inertial dampening coefficient. [Type: FLOAT, Range: 0.1-1.0]</li>
+                <li><span class="prop">AXIS_LOCK</span>: Locks stabilization to a single axis. [Type: ENUM('X', 'Y', 'Z', NULL)]</li>
+                <li><span class="prop">AGGRESSIVE_MODE</span>: Enables high-torque error correction. <span class="warning">!! CAUTION: MAY CAUSE STRUCTURAL DAMAGE !!</span></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>[API_REFERENCE]</legend>
+            <p>Access via authenticated socket connection only. See <a href="#auth">Auth Protocol</a>.</p>
+            <div class="api-block">
+                <h3>.setRPM(value: int)</h3>
+                <p>Sets the target RPM. Returns a promise that resolves when target speed is reached.</p>
+            </div>
+            <div class="api-block">
+                <h3>.getTelemetry()</h3>
+                <p>Returns a stream of real-time telemetry data. { rpm, temp, axis_vector, g_force }.</p>
+            </div>
+            <div class="api-block">
+                <h3>.emergencyStop()</h3>
+                <p>Triggers immediate hardware-level braking. <span class="warning">IRREVERSIBLE. REQUIRES MANUAL RESET.</span></p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>[ERROR_CODES]</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CODE</th>
+                        <th>SEVERITY</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0xDEAD</td>
+                        <td>CRITICAL</td>
+                        <td>Total Power Failure</td>
+                    </tr>
+                    <tr>
+                        <td>0xBEEF</td>
+                        <td>HIGH</td>
+                        <td>Over-temperature Threshold Exceeded</td>
+                    </tr>
+                    <tr>
+                        <td>0xBAD1</td>
+                        <td>MEDIUM</td>
+                        <td>Invalid Command Packet</td>
+                    </tr>
+                    <tr>
+                        <td>0xFEED</td>
+                        <td>LOW</td>
+                        <td>Telemetry Buffer Overflow</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p>END OF TRANSMISSION /// AUTH_SIG: 7A5C3B0F-9D1E-4F8A-B6C2-8E0D9F4A1B3C</p>
+    </footer>
+
+</body>
+</html>
