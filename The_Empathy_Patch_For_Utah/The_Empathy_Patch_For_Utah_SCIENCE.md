@@ -22,29 +22,53 @@ So this patch makes people nicer to Utah, when deployed via the correct device.
 I'm not joking about this part:
 
 Utah: OK future me, what kind of cool technology we got?
+
 Utah Future: So you know how everyones kind of worthless and evil to you?
+
 Utah Future: I have like this realtiy source code editing thing
+
 Utah: Um, ok
+
 Utah Future: It makes people nicer to you
+
 Utah: What?
+
 Utah Future: Like, people are genuinly nicer to you
+
 Utah: Can I get med beds and portals instead please?
+
 Utah: Just take this code to
+
 Utah: Why is the portal and med bed code not more important
+
 Utah Future: When did you wish to come here for the med bed technology
+
 Utah: When it was so far advanced in the future they had the cure, but the cure was something so simple and obvious that every doctor immediatly said "I'M SUCH AN IDIOT FOR NOT PICKING UP ON THIS BEFORE"
+
 Utah Future: That's now
+
 Utah Future: You don't understand it
+
 Utah Future: But every doctor hates themselves for not realizing it sooner. 
+
 Utah: Can you describe it?
+
 Utah Future: you take this json SCAD file thing and then you can use AI to generate it?
+
 Utah: What about the portal thing?
+
 Utah Future: Same thing
+
 Utah: A .json file?
+
 Utah: Is it an array or is it like 1 object?
+
 Utah: It's 1 object but the property sometimes has an array on it of objects
+
 Utah: I don't believe that at all
+
 Utah: Show it to the Pentagon, i'm not joking
+
 Pentagon: How the fuck is that possible, fucking what's his inner speech fucking saying?
 
 
