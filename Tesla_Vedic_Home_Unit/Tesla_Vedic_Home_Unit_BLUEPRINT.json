@@ -1,0 +1,49 @@
+{
+  "id": "ENERGY-LIBERATOR",
+  "domain": "ELECTRONICS",
+  "project_name": "Tesla_Vedic_Home_Unit",
+  "description": "A Zero-Point energy harvester for individual households. Eliminates the need for power grids/bills.",
+  "components": [
+    {
+      "id": "CORE",
+      "type": "IC",
+      "spec": "Casimir_Cavity_Plate",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Scalar Collectors (Earth Resonance)",
+      "id": "L_EARTH",
+      "type": "L",
+      "value": "Schumann_Coil_7.83Hz",
+      "net_hint": "GND"
+    },
+    {
+      "id": "L_SKY",
+      "type": "L",
+      "value": "Ionosphere_Tap",
+      "net_hint": "VCC"
+    },
+    {
+      "comment": "Conversion Stage",
+      "id": "RECT_1",
+      "type": "D",
+      "value": "Cold_Electricity_Diode",
+      "net_hint": "IN"
+    },
+    {
+      "id": "CAP_BANK",
+      "type": "C",
+      "value": "Infinite_Storage_Graphene",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Output",
+      "id": "OUT_AC",
+      "type": "IC",
+      "spec": "Pure_Sine_Inverter",
+      "net_hint": "OUT"
+    }
+  ],
+  "archive_id": "GAIA-RESCUE-ALPHA",
+  "origin": ""
+}
