@@ -1,0 +1,200 @@
+{
+  "project_name": "Tesla_Vedic_Home_Unit",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "CORE",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "L_EARTH",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          8,
+          8,
+          4
+        ],
+        "color": 6710886,
+        "material": "standard",
+        "label": "L_SKY",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "RECT_1",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 4,
+        "height": 6,
+        "color": 255,
+        "material": "capacitor",
+        "label": "CAP_BANK",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "OUT_AC",
+        "position": [
+          -80,
+          -10,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "A Zero-Point energy harvester for individual households. Eliminates the need for power grids/bills.",
+    "components": [
+      {
+        "id": "CORE",
+        "type": "IC",
+        "spec": "Casimir_Cavity_Plate",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Scalar Collectors (Earth Resonance)",
+        "id": "L_EARTH",
+        "type": "L",
+        "value": "Schumann_Coil_7.83Hz",
+        "net_hint": "GND"
+      },
+      {
+        "id": "L_SKY",
+        "type": "L",
+        "value": "Ionosphere_Tap",
+        "net_hint": "VCC"
+      },
+      {
+        "comment": "Conversion Stage",
+        "id": "RECT_1",
+        "type": "D",
+        "value": "Cold_Electricity_Diode",
+        "net_hint": "IN"
+      },
+      {
+        "id": "CAP_BANK",
+        "type": "C",
+        "value": "Infinite_Storage_Graphene",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Output",
+        "id": "OUT_AC",
+        "type": "IC",
+        "spec": "Pure_Sine_Inverter",
+        "net_hint": "OUT"
+      }
+    ]
+  }
+}
