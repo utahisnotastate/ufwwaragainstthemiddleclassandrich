@@ -1,0 +1,102 @@
+{
+  "id": "MECH-ENGRAM-VAULT",
+  "domain": "MECHANICAL",
+  "project_name": "The_Black_Box_of_Dreams",
+  "description": "Indestructible housing for the Engram Core. Portable, infinite capacity.",
+  "geometry_tree": {
+    "op": "difference",
+    "children": [
+      {
+        "comment": "OUTER CASING (Hyper-Diamond)",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              100,
+              100,
+              100
+            ],
+            "color": "Vantablack"
+          },
+          {
+            "op": "sphere",
+            "r": 65,
+            "color": "Vantablack"
+          }
+        ]
+      },
+      {
+        "comment": "GLOWING CORE EXPOSURE",
+        "op": "union",
+        "children": [
+          {
+            "op": "cylinder",
+            "r": 40,
+            "h": 120,
+            "pos": [
+              0,
+              0,
+              -5
+            ],
+            "color": "Neon_Purple"
+          },
+          {
+            "op": "cylinder",
+            "r": 40,
+            "h": 120,
+            "rot": [
+              90,
+              0,
+              0
+            ],
+            "pos": [
+              0,
+              -5,
+              0
+            ],
+            "color": "Neon_Purple"
+          },
+          {
+            "op": "cylinder",
+            "r": 40,
+            "h": 120,
+            "rot": [
+              0,
+              90,
+              0
+            ],
+            "pos": [
+              -5,
+              0,
+              0
+            ],
+            "color": "Neon_Purple"
+          }
+        ]
+      },
+      {
+        "comment": "INNER STABILITY STRUCTURE",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              80,
+              80,
+              80
+            ],
+            "color": "Hyper-Diamond"
+          },
+          {
+            "op": "sphere",
+            "r": 55,
+            "color": "Hyper-Diamond"
+          }
+        ]
+      }
+    ]
+  },
+  "archive_id": "MIND-PALACE-LIVE-SYNC",
+  "origin": "Dimension_Psi_Kappa"
+}

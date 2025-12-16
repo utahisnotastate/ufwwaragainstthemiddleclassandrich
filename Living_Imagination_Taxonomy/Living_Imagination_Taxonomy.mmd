@@ -1,0 +1,23 @@
+graph TD
+    %% Style Definitions
+    classDef core fill:#ff9,stroke:#333,stroke-width:2px;
+    classDef db fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ext fill:#f9f,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
+    THOUGHT(("Raw Spinny Content (Chaos)"))
+    class THOUGHT core
+    PARSE{"Semantic Analyzer"}
+    CAT_1["Inventions"]
+    CAT_2["Art/Visuals"]
+    CAT_3["Deep Lore/Philosophy"]
+    LINK{"Cross-Reference Engine"}
+    class LINK core
+    DISPLAY[("The Master Index (Auto-Updated)")]
+    class DISPLAY db
+    THOUGHT --> |Instant Capture| PARSE
+    PARSE --> |If Tech| CAT_1
+    PARSE --> |If Aesthetic| CAT_2
+    PARSE --> |If Abstract| CAT_3
+    CAT_1 --> |Index| LINK
+    CAT_2 --> |Index| LINK
+    CAT_3 --> |Index| LINK
+    LINK --> |Live Update| DISPLAY

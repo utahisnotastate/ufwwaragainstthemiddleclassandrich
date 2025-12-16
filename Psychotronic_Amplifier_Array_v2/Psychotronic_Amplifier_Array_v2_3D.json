@@ -1,0 +1,222 @@
+{
+  "project_name": "Psychotronic_Amplifier_Array_v2",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "BRAIN_LINK",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "MOD_ALPHA",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "MOD_THETA",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "COIL_PRI",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "CRYSTAL",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          8,
+          8,
+          4
+        ],
+        "color": 6710886,
+        "material": "standard",
+        "label": "ANT_1",
+        "position": [
+          -80,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "FEEDBACK",
+        "position": [
+          -40,
+          -10,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "Translates bio-electric neural signals into broadcastable scalar waves (Mind-to-Matter).",
+    "components": [
+      {
+        "id": "BRAIN_LINK",
+        "type": "IC",
+        "spec": "Neural_Lace_Input",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "Signal Translation",
+        "id": "MOD_ALPHA",
+        "type": "IC",
+        "spec": "Alpha_Wave_Mod",
+        "net_hint": "IN"
+      },
+      {
+        "id": "MOD_THETA",
+        "type": "IC",
+        "spec": "Theta_Wave_Mod",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "The Scalar Core",
+        "id": "COIL_PRI",
+        "type": "L",
+        "value": "Caduceus_Coil",
+        "net_hint": "CENTER"
+      },
+      {
+        "id": "CRYSTAL",
+        "type": "D",
+        "value": "Quartz_Resonator",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Reality Distortion Output",
+        "id": "ANT_1",
+        "type": "L",
+        "value": "Psychic_Broadcast",
+        "net_hint": "OUT"
+      },
+      {
+        "id": "FEEDBACK",
+        "type": "C",
+        "value": "Sanity_Buffer",
+        "net_hint": "GND"
+      }
+    ]
+  }
+}

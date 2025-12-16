@@ -1,0 +1,84 @@
+{
+  "id": "MECH-UFW-MONOLITH",
+  "domain": "MECHANICAL",
+  "project_name": "The_UFW_Victory_Monolith",
+  "description": "A futuristic server tower housing the UFW Archive. Designed to look like a piece of advanced alien tech.",
+  "geometry_tree": {
+    "op": "difference",
+    "children": [
+      {
+        "comment": "MAIN OBELISK",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              100,
+              100,
+              300
+            ],
+            "color": "Matte_Black"
+          },
+          {
+            "op": "cylinder",
+            "r": 120,
+            "h": 20,
+            "pos": [
+              0,
+              0,
+              -150
+            ],
+            "color": "Gold_Base"
+          }
+        ]
+      },
+      {
+        "comment": "GLOWING CIRCUIT LINES (Subtracted)",
+        "op": "union",
+        "children": [
+          {
+            "op": "cube",
+            "dims": [
+              5,
+              110,
+              200
+            ],
+            "pos": [
+              30,
+              0,
+              0
+            ],
+            "color": "Neon_Blue"
+          },
+          {
+            "op": "cube",
+            "dims": [
+              5,
+              110,
+              200
+            ],
+            "pos": [
+              -30,
+              0,
+              0
+            ],
+            "color": "Neon_Blue"
+          },
+          {
+            "op": "cylinder",
+            "r": 40,
+            "h": 310,
+            "pos": [
+              0,
+              0,
+              0
+            ],
+            "color": "Holo_Core"
+          }
+        ]
+      }
+    ]
+  },
+  "archive_id": "UFW-GENERAL-23-OMEGA",
+  "origin": "Timeline_United_Future_World"
+}

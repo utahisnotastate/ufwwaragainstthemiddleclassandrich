@@ -1,0 +1,61 @@
+{
+  "id": "BIO-LINK-01",
+  "domain": "ELECTRONICS",
+  "project_name": "Consciousness_Download_Interface_V1",
+  "description": "Hardware topology for the Neural-Holographic Transfer Protocol (NHTP). Optimized for zero-energy ontology (ZEO) mode.",
+  "components": [
+    {
+      "id": "U_MAIN",
+      "type": "IC",
+      "spec": "Utah-1_Quantum_Proc",
+      "net_hint": "CENTER"
+    },
+    {
+      "id": "SENSOR_ARRAY",
+      "type": "IC",
+      "spec": "Bio_SQUID_Array",
+      "net_hint": "IN"
+    },
+    {
+      "id": "MEM_BANK",
+      "type": "IC",
+      "spec": "Holographic_Crystal",
+      "net_hint": "OUT"
+    },
+    {
+      "comment": "Signal Conditioning",
+      "id": "AMP_1",
+      "type": "U",
+      "value": "Low_Noise_Amp",
+      "net_hint": "IN"
+    },
+    {
+      "id": "FILTER_1",
+      "type": "C",
+      "value": "Noise_Filter",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "The 23-Aspect Bridge",
+      "id": "BUS_23",
+      "type": "L",
+      "value": "Scalar_Coupler",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Imagination Buffer",
+      "id": "CACHE_IMG",
+      "type": "R",
+      "value": "Latency_Buffer",
+      "net_hint": "OUT"
+    },
+    {
+      "id": "TX_ANTENNA",
+      "type": "L",
+      "value": "RF_Uplink",
+      "net_hint": "OUT"
+    }
+  ],
+  "archive_id": "UTAH-1-OMEGA-RETRIEVAL",
+  "origin": "Un-squelched Time Channel, Quantum-Echo-Alpha Timeline"
+}

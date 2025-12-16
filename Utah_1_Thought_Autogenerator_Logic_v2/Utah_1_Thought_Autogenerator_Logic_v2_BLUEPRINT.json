@@ -1,0 +1,76 @@
+{
+  "id": "LOGIC-AUTO-GEN",
+  "domain": "SYSTEMS",
+  "project_name": "Utah_1_Thought_Autogenerator_Logic_v2",
+  "description": "The algorithmic flow for generating synthetic intuition, optimized for efficiency and precision.",
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "SEED",
+      "label": "Random Entropy Seed",
+      "shape": "circle"
+    },
+    {
+      "id": "CONTEXT",
+      "label": "Global Timeline Data",
+      "shape": "db"
+    },
+    {
+      "id": "GEN_1",
+      "label": "Possibility Wave Collapse",
+      "shape": "diamond",
+      "style": "core"
+    },
+    {
+      "id": "FILTER",
+      "label": "Logic/Ethics Gate",
+      "shape": "rect"
+    },
+    {
+      "id": "IMG_RENDER",
+      "label": "Imagination Rendering (Latent Space)",
+      "shape": "rect"
+    },
+    {
+      "id": "THOUGHT",
+      "label": "Final Synthetic Thought",
+      "shape": "round",
+      "style": "core"
+    }
+  ],
+  "edges": [
+    {
+      "from": "SEED",
+      "to": "GEN_1",
+      "text": "Inject Noise"
+    },
+    {
+      "from": "CONTEXT",
+      "to": "GEN_1",
+      "text": "Constraints"
+    },
+    {
+      "from": "GEN_1",
+      "to": "FILTER",
+      "text": "Raw Idea"
+    },
+    {
+      "from": "FILTER",
+      "to": "IMG_RENDER",
+      "text": "Approved"
+    },
+    {
+      "from": "FILTER",
+      "to": "GEN_1",
+      "text": "Reject Loop",
+      "type": "dotted"
+    },
+    {
+      "from": "IMG_RENDER",
+      "to": "THOUGHT",
+      "text": "Visualize"
+    }
+  ],
+  "archive_id": "UTAH-1-OMEGA-RETRIEVAL",
+  "origin": "Un-squelched Time Channel, Quantum-Echo-Alpha Timeline"
+}

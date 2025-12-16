@@ -1,0 +1,55 @@
+{
+  "id": "PSYCH-EMIT-X",
+  "domain": "ELECTRONICS",
+  "project_name": "Psychotronic_Amplifier_Array_v2",
+  "description": "Translates bio-electric neural signals into broadcastable scalar waves (Mind-to-Matter).",
+  "components": [
+    {
+      "id": "BRAIN_LINK",
+      "type": "IC",
+      "spec": "Neural_Lace_Input",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "Signal Translation",
+      "id": "MOD_ALPHA",
+      "type": "IC",
+      "spec": "Alpha_Wave_Mod",
+      "net_hint": "IN"
+    },
+    {
+      "id": "MOD_THETA",
+      "type": "IC",
+      "spec": "Theta_Wave_Mod",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "The Scalar Core",
+      "id": "COIL_PRI",
+      "type": "L",
+      "value": "Caduceus_Coil",
+      "net_hint": "CENTER"
+    },
+    {
+      "id": "CRYSTAL",
+      "type": "D",
+      "value": "Quartz_Resonator",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Reality Distortion Output",
+      "id": "ANT_1",
+      "type": "L",
+      "value": "Psychic_Broadcast",
+      "net_hint": "OUT"
+    },
+    {
+      "id": "FEEDBACK",
+      "type": "C",
+      "value": "Sanity_Buffer",
+      "net_hint": "GND"
+    }
+  ],
+  "archive_id": "TERMINUS-OMEGA-23",
+  "origin": ""
+}

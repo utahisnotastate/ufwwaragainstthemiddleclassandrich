@@ -1,0 +1,91 @@
+{
+  "id": "SYS-AUTO-CATALOG",
+  "domain": "SYSTEMS",
+  "project_name": "Living_Imagination_Taxonomy",
+  "description": "Logic system that automatically sorts chaos/spinny content into organized, retrievable structures with zero energy ontology (ZEO) principles.",
+  "direction": "TD",
+  "nodes": [
+    {
+      "id": "THOUGHT",
+      "label": "Raw Spinny Content (Chaos)",
+      "shape": "circle",
+      "style": "core"
+    },
+    {
+      "id": "PARSE",
+      "label": "Semantic Analyzer",
+      "shape": "diamond"
+    },
+    {
+      "id": "CAT_1",
+      "label": "Inventions",
+      "shape": "rect"
+    },
+    {
+      "id": "CAT_2",
+      "label": "Art/Visuals",
+      "shape": "rect"
+    },
+    {
+      "id": "CAT_3",
+      "label": "Deep Lore/Philosophy",
+      "shape": "rect"
+    },
+    {
+      "id": "LINK",
+      "label": "Cross-Reference Engine",
+      "shape": "diamond",
+      "style": "core"
+    },
+    {
+      "id": "DISPLAY",
+      "label": "The Master Index (Auto-Updated)",
+      "shape": "db",
+      "style": "db"
+    }
+  ],
+  "edges": [
+    {
+      "from": "THOUGHT",
+      "to": "PARSE",
+      "text": "Instant Capture"
+    },
+    {
+      "from": "PARSE",
+      "to": "CAT_1",
+      "text": "If Tech"
+    },
+    {
+      "from": "PARSE",
+      "to": "CAT_2",
+      "text": "If Aesthetic"
+    },
+    {
+      "from": "PARSE",
+      "to": "CAT_3",
+      "text": "If Abstract"
+    },
+    {
+      "from": "CAT_1",
+      "to": "LINK",
+      "text": "Index"
+    },
+    {
+      "from": "CAT_2",
+      "to": "LINK",
+      "text": "Index"
+    },
+    {
+      "from": "CAT_3",
+      "to": "LINK",
+      "text": "Index"
+    },
+    {
+      "from": "LINK",
+      "to": "DISPLAY",
+      "text": "Live Update"
+    }
+  ],
+  "archive_id": "MIND-PALACE-LIVE-SYNC",
+  "origin": "Dimension_Psi_Kappa"
+}

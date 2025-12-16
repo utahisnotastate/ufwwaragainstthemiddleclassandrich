@@ -1,0 +1,219 @@
+{
+  "project_name": "UFW_Tactical_Command_Table",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "CORE_CPU",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "SSD_INF",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "PROJ_N",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "PROJ_S",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "PROJ_E",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "PROJ_W",
+        "position": [
+          -80,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "SPKR_SUB",
+        "position": [
+          -40,
+          -10,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "Hardware for projecting the UFW battle footage and schematics into the room as 3D holograms.",
+    "components": [
+      {
+        "id": "CORE_CPU",
+        "type": "IC",
+        "spec": "General_23_Auth_Key",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "Storage (The Library)",
+        "id": "SSD_INF",
+        "type": "IC",
+        "spec": "Petabyte_Crystal_Drive",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Holo-Projectors",
+        "id": "PROJ_N",
+        "type": "LED",
+        "value": "Map_Projector_N",
+        "net_hint": "VCC"
+      },
+      {
+        "id": "PROJ_S",
+        "type": "LED",
+        "value": "Map_Projector_S",
+        "net_hint": "GND"
+      },
+      {
+        "id": "PROJ_E",
+        "type": "LED",
+        "value": "Map_Projector_E",
+        "net_hint": "OUT"
+      },
+      {
+        "id": "PROJ_W",
+        "type": "LED",
+        "value": "Map_Projector_W",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "Audio Output",
+        "id": "SPKR_SUB",
+        "type": "L",
+        "value": "Infrasound_Woofer",
+        "net_hint": "GND"
+      }
+    ]
+  }
+}

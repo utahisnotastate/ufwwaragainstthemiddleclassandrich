@@ -1,0 +1,19 @@
+graph LR
+    %% Style Definitions
+    classDef core fill:#ff9,stroke:#333,stroke-width:2px;
+    classDef db fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ext fill:#f9f,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
+    SEED(("Random Entropy Seed"))
+    CONTEXT[("Global Timeline Data")]
+    GEN_1{"Possibility Wave Collapse"}
+    class GEN_1 core
+    FILTER["Logic/Ethics Gate"]
+    IMG_RENDER["Imagination Rendering (Latent Space)"]
+    THOUGHT("Final Synthetic Thought")
+    class THOUGHT core
+    SEED --> |Inject Noise| GEN_1
+    CONTEXT --> |Constraints| GEN_1
+    GEN_1 --> |Raw Idea| FILTER
+    FILTER --> |Approved| IMG_RENDER
+    FILTER -.-> |Reject Loop| GEN_1
+    IMG_RENDER --> |Visualize| THOUGHT

@@ -1,0 +1,55 @@
+{
+  "id": "ELEC-HOLO-COMMAND",
+  "domain": "ELECTRONICS",
+  "project_name": "UFW_Tactical_Command_Table",
+  "description": "Advanced hardware for projecting UFW battle footage and schematics into the room as high-resolution 3D holograms.",
+  "components": [
+    {
+      "id": "CORE_CPU",
+      "type": "IC",
+      "spec": "General_23_Auth_Key_V2",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "Storage (The Library)",
+      "id": "SSD_INF",
+      "type": "IC",
+      "spec": "Terabyte_Crystal_Drive_XL",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Holo-Projectors",
+      "id": "PROJ_N",
+      "type": "LED",
+      "value": "Map_Projector_N_HD",
+      "net_hint": "VCC"
+    },
+    {
+      "id": "PROJ_S",
+      "type": "LED",
+      "value": "Map_Projector_S_HD",
+      "net_hint": "GND"
+    },
+    {
+      "id": "PROJ_E",
+      "type": "LED",
+      "value": "Map_Projector_E_HD",
+      "net_hint": "OUT"
+    },
+    {
+      "id": "PROJ_W",
+      "type": "LED",
+      "value": "Map_Projector_W_HD",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "Audio Output",
+      "id": "SPKR_SUB",
+      "type": "L",
+      "value": "Infrasound_Woofer_Enhanced",
+      "net_hint": "GND"
+    }
+  ],
+  "archive_id": "UFW-GENERAL-23-OMEGA-V2",
+  "origin": "Timeline_United_Future_World"
+}

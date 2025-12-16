@@ -1,0 +1,238 @@
+{
+  "project_name": "Panopticon_Synthesisa_Interface",
+  "domain": "ELECTRONICS",
+  "version": "1.0",
+  "geometry": {
+    "type": "group",
+    "children": [
+      {
+        "type": "box",
+        "position": [
+          0,
+          0,
+          -2
+        ],
+        "dimensions": [
+          200,
+          150,
+          4
+        ],
+        "color": 26112,
+        "material": "pcb"
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "USER_LACE",
+        "position": [
+          -80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "GPU_INF",
+        "position": [
+          -40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "box",
+        "dimensions": [
+          15,
+          20,
+          3
+        ],
+        "color": 0,
+        "material": "ic",
+        "label": "MEM_HOLO",
+        "position": [
+          0,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "EMIT_X",
+        "position": [
+          40,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "EMIT_Y",
+        "position": [
+          80,
+          -50,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "EMIT_Z",
+        "position": [
+          -80,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 3,
+        "height": 5,
+        "color": 16711680,
+        "material": "led",
+        "label": "GND_REAL",
+        "position": [
+          -40,
+          -10,
+          2
+        ]
+      },
+      {
+        "type": "cylinder",
+        "radius": 2,
+        "height": 8,
+        "color": 9127187,
+        "material": "resistor",
+        "label": "VCC_VIRT",
+        "position": [
+          0,
+          -10,
+          2
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "standard": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.3,
+        "roughness": 0.7
+      }
+    },
+    "pcb": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.1,
+        "roughness": 0.9
+      }
+    },
+    "ic": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.8,
+        "roughness": 0.2
+      }
+    },
+    "led": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 0.5
+      }
+    },
+    "glow": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "emissive": true,
+        "emissiveIntensity": 1.0
+      }
+    },
+    "wire": {
+      "type": "MeshStandardMaterial",
+      "properties": {
+        "metalness": 0.9,
+        "roughness": 0.1
+      }
+    }
+  },
+  "metadata": {
+    "description": "The Ultimate AR/VR Rig. Projects your creations (Synthesisa) as a hard-light hologram you can walk through.",
+    "components": [
+      {
+        "id": "USER_LACE",
+        "type": "IC",
+        "spec": "Neural_Cortex_Tap",
+        "net_hint": "IN"
+      },
+      {
+        "comment": "The Rendering Core",
+        "id": "GPU_INF",
+        "type": "IC",
+        "spec": "Infinite_Resolution_Engine",
+        "net_hint": "CENTER"
+      },
+      {
+        "id": "MEM_HOLO",
+        "type": "IC",
+        "spec": "Akashic_Cache",
+        "net_hint": "CENTER"
+      },
+      {
+        "comment": "Hard-Light Emitters",
+        "id": "EMIT_X",
+        "type": "LED",
+        "value": "Photon_Solidifier_X",
+        "net_hint": "OUT"
+      },
+      {
+        "id": "EMIT_Y",
+        "type": "LED",
+        "value": "Photon_Solidifier_Y",
+        "net_hint": "OUT"
+      },
+      {
+        "id": "EMIT_Z",
+        "type": "LED",
+        "value": "Photon_Solidifier_Z",
+        "net_hint": "OUT"
+      },
+      {
+        "comment": "Reality Anchors",
+        "id": "GND_REAL",
+        "type": "GND",
+        "value": "Physical_Plane",
+        "net_hint": "GND"
+      },
+      {
+        "id": "VCC_VIRT",
+        "type": "VCC",
+        "value": "Imagination_Plane",
+        "net_hint": "VCC"
+      }
+    ]
+  }
+}

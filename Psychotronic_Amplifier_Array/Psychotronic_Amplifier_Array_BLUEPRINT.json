@@ -1,0 +1,55 @@
+{
+  "id": "PSYCH-EMIT-X",
+  "domain": "ELECTRONICS",
+  "project_name": "Psychotronic_Amplifier_Array",
+  "description": "Translates bio-electric neural signals into broadcastable scalar waves (Mind-to-Matter) utilizing advanced quantum entanglement principles.",
+  "components": [
+    {
+      "id": "BRAIN_LINK",
+      "type": "IC",
+      "spec": "Neural_Lace_Input_Advanced",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "Signal Translation Module",
+      "id": "MOD_ALPHA",
+      "type": "IC",
+      "spec": "Alpha_Wave_Modulator_Quantum_Enhanced",
+      "net_hint": "IN"
+    },
+    {
+      "id": "MOD_THETA",
+      "type": "IC",
+      "spec": "Theta_Wave_Modulator_Quantum_Enhanced",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "Scalar Core Assembly",
+      "id": "COIL_PRI",
+      "type": "L",
+      "value": "Caduceus_Coil_Advanced_V2",
+      "net_hint": "CENTER"
+    },
+    {
+      "id": "CRYSTAL",
+      "type": "D",
+      "value": "Quartz_Resonator_Harmonic_Enhanced_X",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Reality Distortion Output Antenna",
+      "id": "ANT_1",
+      "type": "L",
+      "value": "Psychic_Broadcast_Array_V2",
+      "net_hint": "OUT"
+    },
+    {
+      "id": "FEEDBACK",
+      "type": "C",
+      "value": "Sanity_Buffer_Stabilized_X",
+      "net_hint": "GND"
+    }
+  ],
+  "archive_id": "TERMINUS-OMEGA-23",
+  "origin": "Quantum-Echo-Alpha Timeline, Agent Utah-1"
+}

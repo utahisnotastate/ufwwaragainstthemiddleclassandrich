@@ -1,0 +1,61 @@
+{
+  "id": "ELEC-SYNTH-VIEWER",
+  "domain": "ELECTRONICS",
+  "project_name": "Panopticon_Synthesisa_Interface",
+  "description": "The Ultimate AR/VR Rig. Projects your creations (Synthesisa) as a hard-light hologram you can walk through.",
+  "components": [
+    {
+      "id": "USER_LACE",
+      "type": "IC",
+      "spec": "Neural_Cortex_Tap",
+      "net_hint": "IN"
+    },
+    {
+      "comment": "The Rendering Core",
+      "id": "GPU_INF",
+      "type": "IC",
+      "spec": "Infinite_Resolution_Engine",
+      "net_hint": "CENTER"
+    },
+    {
+      "id": "MEM_HOLO",
+      "type": "IC",
+      "spec": "Akashic_Cache",
+      "net_hint": "CENTER"
+    },
+    {
+      "comment": "Hard-Light Emitters",
+      "id": "EMIT_X",
+      "type": "LED",
+      "value": "Photon_Solidifier_X",
+      "net_hint": "OUT"
+    },
+    {
+      "id": "EMIT_Y",
+      "type": "LED",
+      "value": "Photon_Solidifier_Y",
+      "net_hint": "OUT"
+    },
+    {
+      "id": "EMIT_Z",
+      "type": "LED",
+      "value": "Photon_Solidifier_Z",
+      "net_hint": "OUT"
+    },
+    {
+      "comment": "Reality Anchors",
+      "id": "GND_REAL",
+      "type": "GND",
+      "value": "Physical_Plane",
+      "net_hint": "GND"
+    },
+    {
+      "id": "VCC_VIRT",
+      "type": "VCC",
+      "value": "Imagination_Plane",
+      "net_hint": "VCC"
+    }
+  ],
+  "archive_id": "OMEGA-POINT-30000",
+  "origin": "Timeline_T_Infinity"
+}
