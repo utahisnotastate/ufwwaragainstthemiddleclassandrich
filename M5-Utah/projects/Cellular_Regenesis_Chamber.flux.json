@@ -1,0 +1,29 @@
+{
+  "manifest_version": "1.0",
+  "artifact_id": "cellular_regenesis_chamber",
+  "display_name": "Cellular Regenesis Chamber (Med-Bed)",
+  "description": "Phase-conjugate acoustic generator: Unit-DAC outputs 61.8Hz golden-ratio sine; Unit-Relay drives inverted phase for Priore scalar effect.",
+  "source_blueprint": "Cellular_Regenesis_Chamber/Cellular_Regenesis_Chamber_BLUEPRINT.json",
+  "source_code": "Cellular_Regenesis_Chamber/CHRONO_HEAL_KERNEL.cpp",
+  "archive_id": "GAIA-RESCUE-ALPHA",
+  "m5_hardware": {
+    "device": "cores3",
+    "modules": ["unit_dac", "unit_relay"],
+    "ports": { "dac": "A", "relay": "B" },
+    "assembly": "Unit-DAC on Port A. Unit-Relay on Port B. Transducers on DAC/Relay terminal blocks."
+  },
+  "runtime": {
+    "tasks": [
+      { "name": "entropy_monitor", "core": 0, "priority": 1, "handler": "chrono_heal_monitor" },
+      { "name": "phase_conjugate", "core": 1, "priority": 2, "handler": "chrono_heal_emit" }
+    ]
+  },
+  "parameters": {
+    "carrier_hz": 61.8,
+    "phase_offset_deg": 180,
+    "dac_i2c_addr": 96,
+    "relay_gpio": 2,
+    "session_duration_sec": 300,
+    "entropy_sample_ms": 500
+  }
+}

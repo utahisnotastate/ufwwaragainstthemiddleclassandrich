@@ -1,0 +1,27 @@
+{
+  "manifest_version": "1.0",
+  "artifact_id": "zero_point_gpu",
+  "display_name": "Zero Point GPU Emulator",
+  "description": "Dual-core reality engine: Core 0 computes probability matrices, Core 1 renders voxel field to IPS display.",
+  "source_blueprint": "The_Zero_Point_GPU_Emulator/The_Zero_Point_GPU_Emulator_BLUEPRINT.json",
+  "source_code": "The_Zero_Point_GPU_Emulator/Reality_Engine.cpp",
+  "archive_id": "SILICON-TWILIGHT-23",
+  "m5_hardware": {
+    "device": "cores3",
+    "modules": ["dinbase"],
+    "assembly": "Snap CoreS3 onto DINBase. Connect USB-C."
+  },
+  "runtime": {
+    "core_affinity": { "compute": 0, "display": 1 },
+    "tasks": [
+      { "name": "reality_engine", "core": 0, "priority": 2, "handler": "zero_point_gpu_compute" },
+      { "name": "voxel_display", "core": 1, "priority": 1, "handler": "zero_point_gpu_display" }
+    ]
+  },
+  "parameters": {
+    "grid_size": 32,
+    "wave_speed": 0.15,
+    "zpe_gain": 1.618,
+    "target_fps": 30
+  }
+}

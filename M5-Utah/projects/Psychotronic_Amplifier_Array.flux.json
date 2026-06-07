@@ -1,0 +1,28 @@
+{
+  "manifest_version": "1.0",
+  "artifact_id": "psychotronic_amplifier_array",
+  "display_name": "Psychotronic Amplifier Array (PAA)",
+  "description": "Schumann/Gamma entrainment oscillator driving MOSFET gate into bifilar coil for localized sanctum field.",
+  "source_blueprint": "Psychotronic_Amplifier_Array/Psychotronic_Amplifier_Array_BLUEPRINT.json",
+  "source_science": "Psychotronic_Amplifier_Array/Psychotronic_Amplifier_Array_SCIENCE.md",
+  "archive_id": "TERMINUS-OMEGA-23",
+  "m5_hardware": {
+    "device": "atoms3",
+    "modules": ["mosfet_unit", "bifilar_coil"],
+    "ports": { "mosfet": "A" },
+    "assembly": "MOSFET on Port A. Coil ends in MOSFET screw terminals. External PSU for coil current."
+  },
+  "runtime": {
+    "tasks": [
+      { "name": "oscillator", "core": 0, "priority": 2, "handler": "paa_oscillator" },
+      { "name": "status_led", "core": 0, "priority": 1, "handler": "paa_status" }
+    ]
+  },
+  "parameters": {
+    "mode": "schumann",
+    "frequencies_hz": { "schumann": 7.83, "gamma": 40.0 },
+    "duty_percent": 50,
+    "mosfet_gpio": 1,
+    "external_psu_warning": true
+  }
+}

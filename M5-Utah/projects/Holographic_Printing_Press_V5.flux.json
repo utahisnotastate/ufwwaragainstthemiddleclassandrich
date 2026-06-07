@@ -1,0 +1,31 @@
+{
+  "manifest_version": "1.0",
+  "artifact_id": "holographic_printing_press_v5",
+  "display_name": "Holographic Printing Press V5",
+  "description": "Gesture-driven matter compiler: Unit-Gesture pull motion raises Z-axis stepper; Relay pulses UV array.",
+  "source_blueprint": "Holographic_Printing_Press_V5/Holographic_Printing_Press_V5_BLUEPRINT.json",
+  "source_code": "Holographic_Printing_Press_V5/Matter_Compiler.py",
+  "archive_id": "TERMINUS-OMEGA-23",
+  "m5_hardware": {
+    "device": "core2",
+    "modules": ["stepmotor", "unit_gesture", "unit_relay"],
+    "ports": { "gesture": "A", "relay": "B" },
+    "assembly": "Stack Stepmotor under Core2. Gesture on A, Relay on B. NEMA-17 on stepmotor terminals."
+  },
+  "runtime": {
+    "tasks": [
+      { "name": "gesture_watch", "core": 1, "priority": 2, "handler": "hpp_gesture" },
+      { "name": "stepper_uv", "core": 1, "priority": 2, "handler": "hpp_compile" },
+      { "name": "press_ui", "core": 1, "priority": 1, "handler": "hpp_display" }
+    ]
+  },
+  "parameters": {
+    "gesture_i2c_addr": 93,
+    "relay_gpio": 2,
+    "stepper_steps_per_mm": 400,
+    "z_max_mm": 120,
+    "pull_gesture": "down",
+    "uv_pulse_ms": 800,
+    "intent_clarity_min": 99.9
+  }
+}

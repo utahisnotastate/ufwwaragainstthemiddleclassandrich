@@ -1,0 +1,28 @@
+{
+  "manifest_version": "1.0",
+  "artifact_id": "mnemonic_ddr_infinity",
+  "display_name": "Mnemonic DDR Infinity (Step Machine)",
+  "description": "Kinetic memory writer: PbHub polls 4 FSR units; foot strikes trigger Akashic memory-write events.",
+  "source_blueprint": "Mnemonic_DDR_Infinity/Mnemonic_DDR_Infinity_BLUEPRINT.json",
+  "source_code": "Mnemonic_DDR_Infinity/AKASHIC_RAM.cpp",
+  "archive_id": "SILICON-EVIE-PRIME",
+  "m5_hardware": {
+    "device": "core2",
+    "modules": ["pbhub", "fsr_x4"],
+    "ports": { "pbhub": "A" },
+    "assembly": "PbHub on Port A. FSR units on CH0-CH3. Mount under stepping plates."
+  },
+  "runtime": {
+    "tasks": [
+      { "name": "fsr_poll", "core": 1, "priority": 2, "handler": "mnemonic_ddr_poll" },
+      { "name": "memory_ui", "core": 1, "priority": 1, "handler": "mnemonic_ddr_display" }
+    ]
+  },
+  "parameters": {
+    "pbhub_i2c_addr": 66,
+    "fsr_channels": [0, 1, 2, 3],
+    "strike_threshold": 1800,
+    "memory_slots": 64,
+    "poll_interval_ms": 20
+  }
+}

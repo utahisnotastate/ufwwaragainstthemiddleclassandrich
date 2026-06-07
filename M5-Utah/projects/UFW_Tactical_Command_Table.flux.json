@@ -1,0 +1,38 @@
+{
+  "manifest_version": "1.0",
+  "artifact_id": "ufw_tactical_command_table",
+  "display_name": "UFW Tactical Command Table",
+  "description": "ESP-NOW war room: CoreS3 overlord broadcasts status; 6 AtomS3 worker nodes; ToF gesture halts or executes all ops.",
+  "source_blueprint": "UFW_Tactical_Command_Table/UFW_Tactical_Command_Table_BLUEPRINT.json",
+  "source_code": "UFW_Tactical_Command_Table/REALITY_WAR_ROOM.py",
+  "archive_id": "UFW-GENERAL-23-OMEGA-V2",
+  "m5_hardware": {
+    "device": "cores3",
+    "role": "overlord",
+    "modules": ["unit_tof", "atoms3_lite_x6"],
+    "ports": { "tof": "A" },
+    "assembly": "CoreS3 center desk. 6 AtomS3 Lites surrounding. Unit-ToF on Port A."
+  },
+  "runtime": {
+    "tasks": [
+      { "name": "espnow_broadcast", "core": 0, "priority": 2, "handler": "war_room_broadcast" },
+      { "name": "tof_gesture", "core": 1, "priority": 2, "handler": "war_room_tof" },
+      { "name": "overlord_ui", "core": 1, "priority": 1, "handler": "war_room_display" }
+    ]
+  },
+  "parameters": {
+    "worker_count": 6,
+    "worker_labels": [
+      "FinOps Bots",
+      "Akashic PDF",
+      "SDR Anomaly",
+      "Timeline Sim",
+      "Empathy Burst",
+      "Scraper Fleet"
+    ],
+    "worker_colors": ["green", "blue", "red", "yellow", "purple", "cyan"],
+    "tof_i2c_addr": 82,
+    "wave_threshold_mm": 180,
+    "espnow_channel": 1
+  }
+}

@@ -1,4 +1,26 @@
 # Ko fi https://ko-fi.com/utah23
+
+---
+
+## M5-Utah Flux Deployment (World-A)
+
+**[M5-Utah/](M5-Utah/)** is the solder-free, plug-and-play layer for six UFW artifacts on M5Stack hardware.
+
+1. Flash the Lazarus Kernel once (`run_omni_flash.py`)
+2. Inject any artifact manifest (`run_studio.py`)
+3. No Arduino IDE or per-project compiling for end users
+
+| Resource | Link |
+|----------|------|
+| **Documentation (pick language)** | [M5-Utah/docs/README.md](M5-Utah/docs/README.md) |
+| English docs | [M5-Utah/docs/en/README.md](M5-Utah/docs/en/README.md) |
+| Full doc index | [DOCUMENTATION.md](DOCUMENTATION.md) |
+| Quick start | [M5-Utah/README.md](M5-Utah/README.md) |
+
+Docs cover the **original non-M5Stack UFW layout**, **migration to M5-Utah**, and guides for children, non-technical users, developers, scientists, and skeptics — in English, Estonian, Finnish, Russian, Chinese, and Japanese (separate folders per language).
+
+---
+
 # Please ask for paypal
 # IF YOU WANT TO FUND ME TO BE INCLUDED ON PAPERS THAT HAVE NOT BEEN PUBLISHED YET, PLEASE MESSAGE ME OR EMAIL ME AT utah@utahcreates.com AND I WILL PUT YOU DOWN ON THE FUNDING SECTION. THERE WILL NEVER BE ANOTHER TIMELINE THAT SOLVES THIS BECAUSE I WAS THE FIRST. BE PART OF HISTORY BEFORE THEY GET PUBLISHED. 
 
